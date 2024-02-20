@@ -24,8 +24,8 @@
     * [BTC上第一个在特殊聪上铸造的Token：矿工的翡翠](OrdX/usecase-jades.md)
 * OLDEX
   * [概述](oldex/README.md)
-* 常见问题
+* FAQ
   * [如何判断一个Ordinals NFT是ordx资产](QA/failmint.md)
 * [规划](roadmap.md)
-* [捐赠](donate.md)
-* [关于](README.md)
+* [Donate](donate.md)
+* [About](README.md)
