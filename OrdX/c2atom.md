@@ -1,53 +1,52 @@
-跟Atomicals协议的比较
+Comparison with the Atomicals Protocol
 ====
 
-表面看起来ordx协议和Atomicals很像，都发行FT，都是一币一聪，都是基于UTXO，可以直接转移，但是，这只是表面上的相似，实际上两者是极为不同的。下面分别探讨。
+On the surface, the ordx protocol and Atomicals protocol appear to be similar. Both protocols issue FT tokens, have a one-token-one-satoshi concept, and are based on UTXO, allowing for direct transfers. However, these similarities are only superficial, as the two protocols are fundamentally different. Let's explore their differences below.
 
-理念的不同
+Differences in Concepts
 ----
-Atomicals协议是一个有远大理想和想象力的协议，其格局和创新性值得我们学习。我们会持续跟进Atomicals协议的发展，并从中吸取跟我们的理念一致的想法和技术。最近Atomicals发表了一篇文章，介绍其宏伟愿景（https://twitter.com/atomicalsxyz/status/1753879073690956145），借这个机会，也说说ordx协议的不同理念。
+The Atomicals protocol is an ambitious and imaginative protocol, with a framework and innovation that are worth learning from. We will continue to follow the development of the Atomicals protocol and draw ideas and technologies that align with our own concepts. Recently, Atomicals published an article introducing its grand vision (https://twitter.com/atomicalsxyz/status/1753879073690956145). In this opportunity, let's also discuss the different concepts of the ordx protocol.
 
-对于第一个任务，Atomicals十分重视POW，所以分发代币用了Bitwork技术来模拟BTC的挖矿，认为这是一种“To direct one's own real energy utilization in a peaceful and voluntary way”。这种新奇的代币分发模式，我们一直看不太懂，所以无法评价Atomicals这种方式到底是好还是不好，一切交给市场做最终的评价。 对我们来说，BTC一个就够了，BTC生态不需要再有另外一个使用算力的币来争夺昂贵的算力资源。生长在BTC生态中的币一般只有两种，一种是项目方的币，项目方自己控盘，主导分发；一种是公平分发的币，如何体现公平是这种币的核心需求。ordx协议将决定权交给项目方。项目方可以提前deploy他们的合约，公示并指引用户在指定的高度区间内公平铸造。用户得到了铸造的机会，而且付出了铸造资产所需的聪和手续费，这已经足够公平了，不需要再额外增加算力的争夺。
+Regarding the first task, Atomicals places great emphasis on POW (Proof of Work) and utilizes Bitwork technology to simulate BTC mining. They believe it is a way "To direct one's own real energy utilization in a peaceful and voluntary way." We have been unable to fully understand this novel token distribution model, so we cannot evaluate whether Atomicals' approach is good or not. We leave it to the market to provide the ultimate judgment. For us, one BTC is enough. The BTC ecosystem does not need another coin that competes for expensive computational resources. The coins growing within the BTC ecosystem generally fall into two categories: coins controlled by project teams, who distribute them at their discretion, and fairly distributed coins where fairness is the core requirement. The ordx protocol gives decision-making power to the project teams. They can deploy their contracts in advance, publicly disclose them, and guide users to fair minting within specific height ranges. Users have the opportunity to mint, and they pay the satoshis and fees required for minting, which is fair enough. There is no need for additional competition for computational power.
 
-对于第二个任务，在BTC主网上实现图灵完备的技术方案。这个我们保持对先行者的敬意并持续跟踪。但我们一直没有想清楚的问题是，有没有必要在BTC主网上实现图灵完备的虚拟机。在我们想清楚这个问题之前，我们不会有所行动。我们倾向于和主网配合默契的闪电网络上实现所有的一切，这是我们以后的发展方向。
+Regarding the second task, implementing a Turing-complete technical solution on the BTC mainnet, we maintain respect for the pioneers and continue to track their progress. However, we have always had a question that we haven't fully figured out: Is it necessary to implement a Turing-complete virtual machine on the BTC mainnet? Until we have a clear answer to this question, we won't take action. We tend to collaborate with the mainnet and focus on implementing everything on the Lightning Network, which is our future development direction.
 
-不管如何，BTC生态需要各种协议的探索和实践，很高兴我们能有机会参与BTC生态的建设，我们坚持走Ordinals协议的路线，持续建设Ordinals协议，让Ordinals协议成为互联网的IP/TCP协议。
+Regardless, the BTC ecosystem needs the exploration and practice of various protocols. We are pleased to have the opportunity to participate in the construction of the BTC ecosystem. We remain committed to the path of the ordx protocol and continue to build it, making the ordx protocol the IP/TCP protocol of the internet.
 
-我们另外准备了一篇文章，介绍ordx的[设计理念](concept.md)，没有那么宏大，但是胜在简单易懂，而且可以有效利用现有的基础设施，不用从头造轮子。
+We have also prepared an article introducing [the design concept of ordx](concept.md), which is not as grand but stands out for its simplicity and understandability. It efficiently utilizes existing infrastructure without reinventing the wheel.
 
-
-技术的不同
+Technological Differences
 ----
-技术上的不同是最多最明显的，简单说，ordx是基于Ordinals协议，但Atomicals另起炉灶，是跟Ordinals协议完全不同的另外一种协议，两者可以说是完全的竞争关系。
+The technological differences are the most obvious and significant. In simple terms, ordx is based on the Ordinals protocol, while Atomicals takes a different approach, being an entirely distinct protocol that competes with Ordinals.
 
-1. 数据写入方式和格式  
-ordx的数据全部都封装在Ordinals定义的”信封“里面，跟Ordinals协议兼容，铸造结果是一个标准的Ordinals NFT，可以利用现在有的支持Ordinals协议的钱包和交易所等等基础设施。  
-Atomicals使用了自己定义的协议和格式，一个类似Ordinals协议的信封中，也是写入隔离见证区，同样使用了commint和reveal两次交易揭露隔离见证的内容。
+1. Data Writing Method and Format   
+ordx's data is encapsulated within the "envelope" defined by Ordinals, making it compatible with the Ordinals protocol. The minting result is a standard Ordinals NFT, which can utilize existing infrastructure such as wallets and exchanges that support the Ordinals protocol.
+Atomicals employs its own protocol and format within a similar envelope to the Ordinals protocol. The data is written to the segregated witness area, and it also uses the commit and reveal transactions to disclose the contents of the segregated witness.
+
+2. Binding Relationship with Satoshis   
+ordx assets are strictly bound to satoshis, thanks to the numbering of satoshis by the Ordinals protocol. When minting ordx assets, they are bound to a specific satoshi, and this binding is permanent regardless of the location of the satoshi. Each satoshi in the ordx protocol is unique and identifiable due to their numbering.
+The Atomicals protocol uses the UTXO model to track and transfer arc20 assets but does not fix them to a specific satoshi. Since the Atomicals protocol does not support the Ordinals protocol, it cannot identify specific satoshis, treating satoshis as fungible within the Atomicals protocol.
+
+3. Coloring Scheme   
+ordx does not have a coloring problem because it identifies each satoshi, and whether a satoshi is bound to an asset is determined by its historical data, independent of the satoshi's location.
+Atomicals currently only supports a complete coloring scheme, meaning that all satoshis within a UTXO must be colored. Otherwise, it would result in burning.
+
+4. Splitting Scheme   
+Due to its identification and tracking of each satoshi, the ordx protocol can flexibly utilize the UTXO model to split assets, allowing formore granular control and efficient asset management.
+Atomics’ current split plan has not yet been finalized.
+
+5. Virtual Machine Solution  
+The ordx protocol is a relatively new protocol that started its design in November 2023, taking inspiration from Ordinals, BRC-20, and Atomicals. Due to factors such as manpower and time constraints, progress has been slow, and we currently do not have a well-defined virtual machine technology solution. However, we do not believe that the Bitcoin mainnet requires a virtual machine, so this work has been delayed, and we haven't put much thought and planning into it.
+Atomicals' concept of the AVM (Atomicals Virtual Machine) has gained popularity, but the specific implementation details are still unclear.
+
+6. Layer 2 Network Solution  
+Since its inception, the ordx protocol has been focused on the Lightning Network. We have always emphasized that we only develop native BTC technologies. In our view, the Lightning Network is the native layer 2 network supported by BTC. Only such a layer 2 network can ensure the security of user assets and ensure that assets are under the control of users rather than project teams.
+Has the Atomicals protocol mentioned its own layer 2 network concept? This is something we might have missed.
+
+7. DID (Decentralized Identifiers)  
+The ordx protocol has its own DID solution, which is partially revealed through the restrictions on tick names. The tick length in ordx is a maximum of 16 bytes. We won't disclose the specific details at the moment, but it is completely different from the DID solution in the Atomicals protocol.
 
 
-2. 跟聪的绑定关系  
-ordx资产是跟聪严格绑定的，这得益于Ordinals协议对聪的编号，让ordx资产在铸造时就跟一个聪绑定，这种绑定是永久性的，不管聪在哪里。因为对聪进行编号，所以每个聪在ordx协议中都是独特的，可以识别的。  
-Atomicals协议使用utxo模型来跟踪和转移arc20资产，但不会固定绑定在一个聪上，因为Atomicals协议不支持Ordinals协议，不能识别具体的聪，聪在Atomicals协议中是同质化的。
-
-3. 染色方案  
-ordx其实不存在染色问题，因为它识别每一个聪，聪有没有绑定资产，由聪的历史决定，跟聪在哪里没有关系。  
-Atomicals目前是只支持完全染色方案，也就是一个utxo中的聪，必须全部染色，不然会导致烧毁。
-
-4. 拆分方案  
-ordx因为识别和跟踪每一个聪，所以拆分方案可以灵活利用utxo模型，直接拆到一个utxo中只有一个聪有ordx资产。  
-Atomicals目前的拆分方案还没有最终确定。
-
-5. 虚拟机方案  
-ordx协议是一个很新的协议，从2023年11月才开始设计，参考了Ordinals，BRC-20，Atomicals的设计。因为人力和时间等等关系，进展也不快，所以目前我们没有什么虚拟机技术方案。但是，我们并不认为BTC主网需要虚拟机，所以这项工作已经拖延，并没有很好去构思和规划。  
-Atomicals的AVM概念已经深入人心，但具体如何做，确实还不清楚。
-
-6. 二层网络方案  
-ordx协议从诞生的第一天，就已经瞄准了闪电网络。我们也一直强调过，我们只发展BTC原生技术。在我们眼里，闪电网络就是BTC原生支持的二层网络，只有这样的二层网络，才能保证用户资产的安全，保证资产是在用户的掌控之下，而不是项目方。  
-Atomicals协议有提过他们的二层网络构思吗？这一点我们可能漏掉了。
-
-7. DID  
-ordx协议有自己的DID方案，从我们对tick名字的限制其实已经透露了一些信息，ordx的tick长度最长16个字节。具体如何暂时不透露了，反正跟Atomicals协议完全不一样。
-
-小结
+Summary
 ----
-ordx协议和Atomicals协议其实差别很大，但都是BTC生态的建设者，都希望BTC生态繁荣兴旺。我们也不是敌人，是砥砺前行的同路人。
+The ordx protocol and the Atomicals protocol differ significantly, but both are builders of the BTC ecosystem and aspire to its prosperity. We are not enemies; we are fellow travelers on the path of progress.

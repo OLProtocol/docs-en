@@ -1,25 +1,21 @@
-规划
-============
-
+Roadmap
+====
 
 ordx
 ----
-
-1. 开发ordx协议，支持deploy和mint操作，支持索引服务。  （2024.01）
-2. 网站上提供ordx资产的挂单交易。    （2024.03）
-3. 提供在特殊sat上发行FT的功能。     （2024.04）
-
-
+1. Develop the ordx protocol, supporting deploy and mint operations, as well as index services. (January 2024)
+2. Enable order book trading for ordx assets on the website. (March 2024)
+3. Implement the functionality to issue FT on specific sats. (April 2024)
 
 oldex
 ----
-在闪电网络上建设一个DEX，让所有基于Ordinals协议的资产，可以在不脱离用户的控制的情况下，进行安全经济快捷的交易，目标是交易确认时间在5s内，交易成本是主网交易费用的5%以下。所有这些工作我们希望能在2024年上半年完成。
+Build a decentralized exchange (DEX) on the Lightning Network, allowing secure, cost-effective, and fast trading of all assets based on the Ordinals protocol without removing them from user control. The goal is to achieve transaction confirmation times within 5 seconds and transaction costs below 5% of on-chain transaction fees. We aim to complete all these tasks in the first half of 2024.
 
-1. 研究和选择OLDEX技术原型  （2023.12- ）
-2. OLDEX产品原型开发       （2024.04- ）
-3. OLDEX产品原型测试和推广  （2024.07- ）
+1. Research and select the OLDEX technical prototype. (December 2023 - )
+2. Develop the OLDEX product prototype. (April 2024 - )
+3. Test and promote the OLDEX product prototype. (July 2024 - )
 
 
-请注意，这仅仅是开始。在这个发展过程中，我们坚持这样的原则，也是我们对未来趋势的判断：   
-1. 资产在BTC主链上发行：BTC链上会有越来越多的资产。
-2. 资产在闪电网络上交易：无限的流动性，同时资产不脱离用户的控制，安全，经济，快捷。
+Please note that this is just the beginning. Throughout this development process, we adhere to the following principles, which reflect our understanding of future trends:
+1. Asset issuance on the BTC mainchain: There will be an increasing number of assets on the BTC mainchain.
+2. Asset trading on the Lightning Network: Unlimited liquidity while ensuring assets remain under user control, providing security, cost-effectiveness, and speed.

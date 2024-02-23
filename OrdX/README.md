@@ -1,24 +1,18 @@
-Ordinals X协议
+Ordinals X Protocol
 =========
 
+Ordinals X, also known as the enhanced Ordinals protocol (ordx protocol), enables the issuance of fungible tokens on the BTC mainnet using the Ordinals protocol. It follows the principle of one satoshi representing one asset, permanently bound and immutable. When satoshis are transferred, the assets are transferred along with them, eliminating the problem of asset destruction due to user error (satoshi never disappears). One asset can consist of n tokens, defined independently by the project. By default, one asset corresponds to one token. This is the world's first "satoshi standard" protocol for issuing fungible tokens.
 
-Ordinals X是一个增强的Ordinals协议（简称ordx协议），支持使用Ordinals协议在BTC主网上发行fungible token。一个聪，一份资产，永久绑定，不可变更。转移聪时，资产也就跟着转移，不存在因为误操作导致资产烧毁的问题（聪永不消失）。一份资产，可以是x个token，由项目方自主定义。默认情况下，一份资产对应一个token。这是世界上第一个“聪本位”的FT发行协议。
+The potential of the Ordinals protocol is immense, and even its creator, Casey, may not fully grasp the power of the protocol. Before the invention of the Ordinals protocol, BTC was homogeneous, and we couldn't differentiate one BTC from another or provide a specific definition for BTC. After the invention of the Ordinals protocol, the definition of BTC became clear: one BTC is composed of 100 million satoshis, each with a specific number that remains unchanged. It's like a gold brick made up of 100 million gold beans, and each gold bean has a unique code. Suddenly, what used to be homogeneous satoshis transformed into unique gold beans, each with its own fixed number and its own unique timeline, participating in different historical events and carrying data of different values. This forms the basis for the varying value of each satoshi. Our ultimate goal is to explore the unique value of each satoshi, to make more people understand and use satoshis, and to enable everyone to participate in creating new value for satoshis and enjoy the pleasure they bring.
 
+The protocol officially launched at block height 828200.
 
-Ordinals协议的潜力非常巨大，即使是该协议的创造者Casey，可能也没有完全了解该协议的威力。在Ordinals协议发明之前，BTC是同质化的，我们无法区分这个BTC跟那个BTC有什么不同，甚至无法给出一个BTC的具体定义。在Ordinals协议发明之后，BTC的定义就变得非常清晰了：一个BTC由一亿个聪组成，每个聪有具体的编号，永久不变。就像一块金砖，由一亿颗金豆子组成一样。而且，每个金豆子都有一个独特的编码。这样，本来是同质化的聪，突然变成了独特的金豆子，拥有自己固定的编号，也就拥有自己的独特的时间线，参与不同的历史事件，携带不同价值的数据。这是每个聪价值不同的基础。挖掘每个聪的独特价值，让越来越多的人了解聪，让每个人都能参与创造聪新的价值，享受聪的乐趣，是我们的最终目标。  
-
-协议在高度828200正式启用。
-
-
-愿景
+Vision
 ----
-一聪一世界。  
-One sat, one universe.  
+One sat, one universe.
 
-目标
+Goals
 -----
-1. 挖掘聪的独特价值：特殊属性的聪，或者具备特殊编号的聪，或者特殊历史事件的聪。
-2. 创造聪的新价值：在聪上创造新的资产，或者在聪上铭刻有价值的数据，或者其他更有想象力的创新内容。 
-3. 让更多的人了解聪，使用聪，享受聪带来的乐趣。  
-
-
+1. Explore the unique value of satoshis: satoshis with special attributes, specific numbering, or associated with significant historical events.
+2. Create new value for satoshis: create new assets on satoshis, inscribe valuable data on satoshis, or explore other imaginative and innovative possibilities.
+3. Enable more people to understand, use, and enjoy the benefits of satoshis.

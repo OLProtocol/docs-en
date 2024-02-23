@@ -1,28 +1,26 @@
-BTC上第一个在特殊聪上铸造的FT：矿工的翡翠
+The First FT Minted on a Special Satoshi on BTC: Miner's Jades
 ====
 
-ordx协议即将完成了特殊聪上铸造Token的功能开发。在我们完成该功能之后，第一个铭文：矿工的翡翠，将会被部署。铭文内容如下：  
+The OrdX protocol is nearing completion of the development of the feature to mint tokens on a special satoshi. Once we complete this feature, the first inscription, called "Miner's Jade," will be deployed. The inscription details are as follows:  
+
 {  
-"p": "ordx",  
-"op": "deploy",  
-"tick": "Jades",  
-"lim": "1",  
-"attr": "rar=uncommon",  
-"des": "Miner's Jades."  
+  "p": "ordx",  
+  "op": "deploy",  
+  "tick": "Jades",  
+  "lim": "1",  
+  "attr": "rar=uncommon",  
+  "des": "Miner's Jades."  
 }  
-铸造时，只有钱包中有uncommon属性的聪才能完成铸造，没有特殊聪无法完成铸造。铸造成功得到一个Jades，这是一个ordx的Token，绑定在这个特殊聪上面，主网上无法再拆分。特殊聪打造的数字珍宝，价值可能会非常高，以后可能需要原生的二层网络去拆分或者抵押。这类数字珍宝，适合收藏。  
 
+During the minting process, only sats with the "uncommon" attribute in the wallet can be used for minting. Without a special satoshi, minting cannot be completed. A successful minting will result in a Jades token, which is an OrdX token bound to the special satoshi and cannot be further divided on the main network. These digitized treasures forged on special sats may have significant value, potentially requiring native layer-two networks for splitting or collateralization. Such digital treasures are suitable for collecting.
 
-按照Ordinals协议的理论，所有2100万亿的聪之中，只有6929999个uncommon的聪。uncommon的聪指的是在每个区块中的第一个TX的第一个UTXO的第一个聪。按照BTC的设计，每个块的第一个交易是奖励区块，也就是矿工挖矿所得。大致在6929999个区块之后，就没有奖励了（因为BTC的最小单位是聪，在这之后的区块，奖励的聪连一个单位都没有，直接变成0，当然这是很久以后的事了。）。这个铭文，实际上扩展了uncommon的定义，在没有新的聪生成的情况下，第一个交易的第一个UTXO的第一个聪，依然可以被铸造成Jades。  
+According to the theory of the Ordinals protocol, out of the total 21 trillion sats, there are only 6,929,999 uncommon sats. Uncommon sats refer to the first satoshi of the first UTXO of the first transaction in each block. In the design of BTC, the first transaction in each block is the block reward received by miners. Roughly after 6,929,999 blocks, there will be no more block rewards (because the minimum unit of BTC is a satoshi, and after this point, the block rewards will be zero, which will happen far in the future). This inscription actually expands the definition of uncommon. Even without the generation of new sats, the first satoshi of the first UTXO of the first transaction can still be minted into Jades.
 
-到目前为止，BTC的区块高度大概是830000，也就是只有大概830000个聪可以被铸造成Jades，而这些聪，大几率在大户和交易所手里。每天BTC会新增加144个左右的区块，每年大致增加52560个Jades。
+As of now, the block height of BTC is approximately 830,000, which means there are only about 830,000 sats that can be minted into Jades, and a high probability of these sats is held by whales and exchanges. BTC adds around 144 new blocks per day, resulting in roughly 52,560 Jades minted each year.
 
+This inscription holds special significance:
+1. It is the world's first token minted on a special satoshi. Special sats are unique products of Bitcoin and have significant appreciation potential. As BTC's influence grows, the value of special sats will be recognized by more people, and their value could rise exponentially. It can be said that all special sats at present are like natural diamonds. Searching for and collecting these special sats has become a valuable and enjoyable pursuit for many people. However, collecting and managing special sats is not easy. In the early stages of Ordinals development, there have been many NFT projects issued on special sats. But managing individual NFTs one by one is difficult. Currently, there are no good tools that allow those who do not possess special sats to easily discover them and list them on the market for interested buyers. Similarly, those who need special sats lack tools to manage these NFTs associated with thousands of special sats. The special satoshi inscribings provided by the OrdX protocol now allow anyone who holds BTC to easily check if they have any special sats in their wallet. If they do, they can directly mint them into tokens and list them for sale. Collectors of special sats can purchase them on the market and display them as token quantities, just like regular tokens, instead of individual NFTs.
+2. It also pays homage to Bitcoin miners. The first satoshi of each block is obtained by Bitcoin miners. Even if BTC is completely mined in the future and no new BTC is generated, the first satoshi of each block can still be minted into a jade. If the value of this inscription becomes high enough, it could serve as an incentive for miners to continue contributing to the security of the BTC network.
+3. This is also the first infinite mining inscription of the OrdX protocol. However, infinite mining in OrdX is not limited to natural special sats alone. The greater application lies in creative mining, which is a human advantage rather than a machine advantage. This provides an opportunity for ordinary people to create significant value by utilizing their creativity using the OrdX protocol on regular sats. Stay tuned for more details.
 
-这个铭文，具有特殊的意义：  
-1. 这是世界上第一个在特殊聪上铸造的Token。特殊聪是比特币的特殊产物，具有非常大的升值空间，随着BTC的影响力越来越大，特殊聪的价值将会得到更多人的认可，价值上升潜力无法预估。可以说现在所有的特殊聪，都是天然的钻石。寻找并收藏这些特殊聪，成为很多人的一项非常有价值又有乐趣的工作。但是，特殊聪的收集和管理并不容易。在Ordinals发展的早期，已经有很多NFT项目，发行在特殊聪上面。但一个一个的NFT，并不容易管理。现在也没有很好的工具，让不需要特殊聪的人可以很容易发现特殊聪，并将这些特殊聪挂到市场上让有需要的人购买；需要特殊聪的人，也缺少工具来管理这些特殊聪，毕竟面对成千上万个特殊聪的NFT，浏览都是问题。现在ordx协议提供的特殊聪铭文，让每一个拥有btc的人，可以很容易查看自己钱包中是否存在特殊聪，如果有，就直接铸造成Token，然后挂单卖出去。收集特殊聪的人，可以在市场上买入，并像普通的Token一样，显示成Token的数量，而不是单个的NFT。
-2. 这也是一个向比特币矿工致敬的铭文。每个区块的第一个聪，都是由比特币矿工获得。以后即使BTC挖完了，不再有新的BTC，每个区块的第一个聪一样可以被铸造成翡翠。如果这个铭文的价值足够高，足以激励矿工持续为BTC网络的安全做出贡献。
-3. 这也是ordx协议第一个无限挖矿的铭文。当然ordx无限挖矿不会仅限于天然的特殊聪，ordx无限挖矿更大的应用在于创造力挖矿，这是人的优势，而不是机器的优势，这也是普通人的机会，通过合理利用自己的创造力，使用ordx协议，在普通聪上面，创造出巨大的价值。敬请期待。
-
-
-更多BTC上的珍宝，我们会继续挖掘，也希望社区参与创造更多的玩法。群众的智慧是无限的。
-
+We will continue to explore more treasures on BTC and hope that the community will participate in creating more gameplay. The wisdom of the masses is limitless.

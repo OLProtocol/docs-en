@@ -1,12 +1,9 @@
-用例
+Use Cases
 ====
 
+We celebrate the release of the protocol and pay tribute to the pioneers with the following examples. Please note that a small transaction fee (1000 sats or 1% of the transaction fee) will be charged for all transactions conducted through our website to support the development and operation of the protocol.
 
-我们用下面的几个例子，庆祝协议的发布，并且对先行者致敬。
-注意所有通过我们网站进行的交易操作，都会收取一点点的手续费（1000sats或者交易费用的1%），作为支持协议开发和运营的费用。  
-
-
-东方之珠
+The Orient Pearl
 ----
 {   
   "p": "ordx",  
@@ -16,14 +13,9 @@
   "lim": "10000",  
   "des": "The Oriental Pearl."    
 }   
-我们计划在2024年1月25日正式发布协议，并且部署第一个Token：Pearl。  
-大概在2024年2月1日前后开启fair mint，持续到2月5日左右结束（由区块高度828200-828800决定有效的mint时间）。这是ordx协议的第一个token，也是一个meme币，仅供试验，没有价值，不要FOMO。  
-   
+We plan to officially release the protocol on January 25, 2024, and deploy the first token: Pearl. The fair mint is expected to start around February 1, 2024, and continue until around February 5 (based on block heights 828200-828800). This is the first token of the ordx protocol and is a meme coin for experimental purposes only, with no value. Please do not FOMO.
 
-
-为了挖掘特殊sat的价值，并且方便这些特殊sat的管理，我们将这些特殊sat归类，并将他们铭刻为某种Fungible Token。这是OrdX协议的特殊能力。 下面是一些例子，仅供参考，并没有实际部署。  
-
-矿工的翡翠
+Miner's Jades
 ----
 {  
   "p": "ordx",  
@@ -33,10 +25,9 @@
   "attr": "rar=uncommon",  
   "des": "Miner's Jades."  
 }  
-每个区块的第一个sat才能mint成功，预计每个Jades值1个BTC。
+Only the first sat of each block can be successfully minted, and it is expected that each Jades will be worth 1 BTC.
 
-
-Domo的蓝宝石
+Domo's Sapphires
 ----
 {  
   "p": "ordx",  
@@ -46,10 +37,9 @@ Domo的蓝宝石
   "attr": "rar=rare",  
   "des": "Domo's Sapphires."  
 }  
-只有rare属性的sat才能mint成蓝宝石，最多只有3437个蓝宝石。目前只有不到400个，预计每个值100BTC。
+Only sats with the rare attribute can be minted into Sapphires, with a maximum of 3,437 Sapphires. Currently, there are less than 400, and each one is expected to be worth 100 BTC.
 
-
-Casey的红宝石
+Casey's Rubies
 ----
 {   
   "p": "ordx",  
@@ -59,10 +49,9 @@ Casey的红宝石
   "attr": "rar=epic",  
   "des": "Casey's Rubies."  
 }  
-只有epic属性的sat才能mint成红宝石，最多只有32个红宝石。目前只有3个，预计每个值10000BTC。
+Only sats with the epic attribute can be minted into Rubies, with a maximum of 32 Rubies. Currently, there are only 3, and each one is expected to be worth 10,000 BTC.
 
-
-Satoshi的钻石
+Satoshi's Diamond
 ----
 {   
   "p": "ordx",  
@@ -72,10 +61,9 @@ Satoshi的钻石
   "attr": "rar=mythic",  
   "des": "Satoshi's Diamond."  
 }  
-只有mythic属性的sat才能mint成钻石，全网只有一个，其价值无法估量。
+Only sats with the mythic attribute can be minted into Diamonds, and there is only one in the entire network. Its value is immeasurable.
 
-
-数字黄金
+Digital Gold
 ----
 {  
   "p": "ordx",  
@@ -85,11 +73,9 @@ Satoshi的钻石
   "attr": "trz=8",  
   "des": "The first satoshi in a BTC"  
 }  
-每个BTC的第一个sat才能mint成功。该sat的序号的末尾是8个0。这意味着，每个token值一个BTC。
+Only the first satoshi of each BTC can be successfully minted. The serial number of this sat ends with eight zeros. This means that each token is worth one BTC.
 
-
-
-如意
+Lucky Charm
 ----
 {  
   "p": "ordx",  
@@ -100,11 +86,10 @@ Satoshi的钻石
   "attr": "cn=100000",    
   "des": "万事如意"  
 }  
-在某个具有100000个连续编号的SatRange上mint一个如意，一个如意就有100000个sat，每次mint最高能获得1000个如意。    
-拥有一个如意的人将获得万事如意的祝福。
+Mint a 如意 on a SatRange with 100,000 consecutive numbers. Each 如意 consists of 100,000 sats, and the maximum mint per transaction is 1,000 如意. 
+The owner of a 如意 will receive blessings for all their wishes to come true.
 
-
-红包
+Red Envelope
 ----
 {  
   "p": "ordx",  
@@ -115,50 +100,42 @@ Satoshi的钻石
   "n": "888",   
   "des": "恭喜发财"  
 }  
-每个红包需要888个sat，每次mint最高能获得1000个红包。  
-红包具有特别的意义，在华人圈尤其流行，恭喜发财，红包拿来。  
+Each 红包 requires 888 sats, and the maximum mint per transaction is 1,000 红包. 红包 have special significance, especially in Chinese culture, symbolizing good luck and prosperity.
 
-
-
-红玫瑰
+Red Rose
 ----
 {  
   "p": "ordx",  
   "op": "deploy",  
   "tick": "Roses",  
-  "n": "1314",   
-  "attr": "pattern=5201314",   
+  "n": "1314",  
+  "attr": "pattern=5201314",  
   "des": "forever love"  
 }  
-将序号中包含”5201314“的sat铸造成一朵表达爱意的红玫瑰，一朵红玫瑰需要1314个sat，第一个sat是指定的特殊sat。
+Create a red rose by casting a sat with a number that includes "5201314". It requires 1314 sats, and the first sat is a specified special sat.
 
-
-数字ID
+DID
 ----
-一个特定号码的sat，用来做自己的数字ID那是最好不过了。比如这个号码是自己的手机号码，或者身份证号码，或者生日等等，都非常有意义，也不容易忘记。但是，要找到自己喜欢的号码非常困难。我们计划提供一个服务，用户可以挂单收购特定的sat，供用户买入自己中意的sat。然后提供工具让用户在这个sat上铭刻各种自己期望的数据，这将是个人在数字世界最好的入口，没有人能冒充自己独有的sat。
+Having a sat with a specific number as your numeric ID would be ideal. For example, this number could be your phone number, ID card number, birthday, etc., all of which have special meaning and are easy to remember. However, finding a sat with your preferred number is challenging. We plan to offer a service where users can place orders to buy specific sats, allowing them to acquire their desired sats. Then, we provide tools for users to inscribe various desired data on these sats, making it the best entry point for individuals in the digital world, with no one able to impersonate a sat that belongs uniquely to them.
 
-即使没有特殊号码的sat，也可以找个普通的sat作为自己的id，自己只需要记住这个sat的编号，像记忆自己的身份证号码一样记忆自己的sat号码。跟自己相关的所有公开的数据都可以直接记录在这个sat上，方便自己和别人直接使用。可以多准备几个sat，作为自己的匿名ID参与网络事务。  
+Even without a sat with a special number, you can choose a regular sat as your ID. You just need to remember the number of that sat, similar to remembering your ID card number. You can directly record all publicly relevant data on that sat, making it convenient for yourself and others to use. You can prepare multiple sats as anonymous IDs for participating in online transactions.
 
+When using a regular sat as your ID, you can use the "deploy" command to write your name on the sat and include any additional data you wish to add. This makes it easier to remember and locate.
 
-使用普通的sat作为自己的id时，通过deploy指令将名字写入sat中，同时写入自己希望写入的一些数据，这会让记忆和查找更加容易。  
 {  
   "p": "ordx",  
   "op": "deploy",  
   "tick": "your_name",  
-  "type": "DID",   
-  "des": "your public message"      
+  "type": "DID",  
+  "des": "your public message"  
 }  
-这是一种特殊的铭文，相当于通过占用一个名字来充当自己的DID。可以看到，名字是稀缺的，不管是用户名字，还是作为Token的名字，都在竞争有限的名字空间。请注意，该deploy操作也会绑定到sat上，谁拥有这个sat，谁就拥有该DID。针对类型是DID的铭文，我们后续会根据需求扩展功能。  
+This is a special engraving method that essentially occupies a name to serve as your Decentralized Identifier (DID). Note that names are scarce resources, whether as usernames or token names, as they exist in a limited namespace. Please be aware that the "deploy" operation is also bound to the sat, so whoever owns that sat will own the associated DID. We will expand functionality for this type of engraving based on demand.
 
-
-
-数字空间
+Digital Space
 ----
-随着sat上铭刻的数据越来越多，一个sat甚至成为个人的数字空间，其公开的数据可以让别人了解你的基础情况，你也可以铭刻各种加密的数据，或者仅仅是加密数据的分片，需要多个sat参与才能解密。每个人都可以基于sat打造一个完全属于自己的数字空间。  
+As more data is inscribed on sats, a single sat can even become a personal digital space. The publicly accessible data on the sat allows others to understand your basic information. You can also inscribe various encrypted data or even fragments of encrypted data that require multiple sats to decrypt. Everyone can build their own unique digital space based on sats.
 
 
-
-
-结论
+Conclusion
 ----
-Ordinals协议的应用场景还没有被很好挖掘，我们的想象力还没有被打开，无限的想象空间交给充满奇思妙想的你们。
+The application scenarios of the Ordinals protocol have yet to be fully explored, and our imagination remains untapped. We leave the infinite realm of possibilities to creative minds like yours.

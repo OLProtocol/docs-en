@@ -1,9 +1,8 @@
-多重铭刻
+Multiple Inscribings
 ====
 
+Each satoshi can be deployed with multiple assets, and that's okay. It indicates that the satoshi is highly sought after. This means that a satoshi can be bound to multiple assets without any restrictions, allowing for unlimited bindings. However, it's important to note that once an asset is bound to a satoshi, it is permanent and cannot be removed or destroyed. This means that it's not possible to sell the assets bound to a specific satoshi separately. You can only sell the satoshi as a whole; you cannot sell the assets bound to it individually.
 
-每个sat都有可能被部署多次资产，这没有关系，说明这个sat非常受欢迎。这相当于一个sat绑定了多个资产，而且没有限制，可以无限绑定。但是需要注意的是，sat上绑定资产是永久性的，无法移除，无法销毁，也就意味着没有办法将一个sat上的资产分开卖。你只能卖一个sat，不能将其绑定的资产单独卖掉。
+This feature opens up many interesting possibilities. For example, a wealthy individual could purchase an epic satoshi and then inscribe it with more valuable data, creating multiple NFTs or minting it into a certain type of FT. This could potentially create a highly valuable satoshi. In the future, we might see a satoshi that is worth 10,000 BTC.
 
-这个特性会带来很多很好玩的玩法。比如某个土豪，买了一个epic的sat，然后在上面inscribe更多有价值的数据，可以将它做成多个nft，也可以mint成某种FT，这有可能制造某个价值连城的sat。在未来，可能会出现某个值一万个BTC的sat。  
-
-另外一种可以玩的，就是在某个sat不断刻录某种数据，比如一个故事，一部小说，甚至一个人的历史。一个sat，就是一个入口。
+Another way to explore this feature is by continuously inscribing specific data on a satoshi, such as a story, a novel, or even a person's history. A satoshi becomes a gateway to accessing that data.

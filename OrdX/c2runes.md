@@ -1,66 +1,64 @@
-跟Runes协议的比较
+Comparison with the Runes Protocol
 ====
 
+During the holiday break, we thoroughly studied Casey's blog (https://rodarmor.com/blog/runes/) and an article he recommended introducing the Runes protocol (https://github.com/zhiqiangxu/btc_notes/blob/main/ordinal_runes.md). Only then did we have a complete understanding of the Runes protocol. Based on the information we have gathered so far, it appears that the Runes protocol has little to do with the Ordinals protocol. This came as a surprise to us. With the Ordinals protocol deeply ingrained and having a significant market impact with a large user base, Casey decided to completely abandon the Ordinals protocol and adopt new technologies, terminology, and naming conventions in the Runes protocol. This not only confuses users and increases their learning curve but also adds development costs for the Runes protocol's support in the development community. Both wallets and trading markets must be redesigned to be compatible with both Ordinals' NFTs and Runes' FTs. While we are not Casey and do not know the considerations behind his decision, we are disappointed with the outcome of his new protocol having no connection to the Ordinals protocol. It seems that Casey may have overlooked the enormous potential of the Ordinals protocol, which poses a significant obstacle to its adoption.
 
-放假期间，我们认真研究了Casey的blog(https://rodarmor.com/blog/runes/) 和他推荐的一篇介绍Runes协议的文章(https://github.com/zhiqiangxu/btc_notes/blob/main/ordinal_runes.md)，才算对Runes协议有一个完整的把握。从目前了解到的资料来看，Runes协议其实跟Ordinals协议已经没有多大的关系了。这一点让我们非常的惊讶。在Ordinals协议深入人心，取得巨大市场效应，获得大量用户的前提下，Casey重启炉灶，完全放弃了Ordinals协议，使用了新的技术，新的术语，新的命名规则等等一系列跟Ordinals协议完全不同规范，现有的完善的Ordinals协议基础设施完全抛弃不用。这不仅让用户困扰，增加用户学习成本，也增加开发社区对Runes协议支持的开发成本。无论是钱包还是交易市场，都必须重新设计，以便兼容Ordinals的NFT和Runes的FT。我们不是Casey，不知道他做选择时的考量，但是我们对Casey的新协议跟Ordinals协议没关系这样的结果非常的失望。Ordinals协议的巨大潜力，可能Casey都忽略了，这对推行Ordinals协议造成了很大障碍。
+Since the Runes protocol has no relation to the Ordinals protocol, and the ordx protocol is based on the Ordinals protocol, the differences between these two protocols are expected to be substantial. Based on the available information, we can provide a brief comparison between the two protocols. A more detailed comparison may be possible once the Runes protocol is launched.  
 
-既然Runes协议跟Ordinals协议没有关系，而ordx协议又是基于Ordinals协议的，那两个协议之间的差别应该会很大。根据现在的资料，我们对这两个协议做一个简单的对比。更详细的对比可能要等Runes协议上线之后。
 
-兼容性
+Compatibility
 ----
-ordx协议基于Ordinals协议，只是在Ordinals的基础上，往前走了一小步，甚至可以说连一步都算不上，仅仅是小半步。但是带来的好处是巨大的，ordx和Ordinals协议在某个层面上是相互兼容的。ordx资产在没有拆分之前，就是一个标准的Ordinals NFT，这让ordx协议可以有效利用市场上非常成熟的Ordinals协议的基础设施，不需要从头造轮子去重新建设钱包，浏览器，swap交易市场等等，甚至连indexer都可以不用，完全可以由钱包跟踪和验证ordx资产的有效性，只需要做一点点的验证代码支持。
+The ordx protocol is based on the Ordinals protocol, taking only a small step forward from its foundation, almost insignificant. However, this small step brings significant benefits as ordx and the Ordinals protocol are mutually compatible at a certain level. Before being split, ordx assets are standard Ordinals NFTs, allowing the ordx protocol to effectively leverage the well-established infrastructure of the Ordinals protocol in the market. This eliminates the need to build wallets, browsers, swap trading markets, and even indexers from scratch. The verification and tracking of ordx assets' validity can be done by wallets with just a few lines of verification code.
 
-形式上Runes协议走的太远了，可以说跟Ordinals协议完全没有关系，导致现有的Ordinals基础设施无法支持Runes协议的，需要重新开发。但是从本质上来看，其实Runes跟BRC-20更相似，都是构建了一套新的账本，但是都一样没有好好利用聪的概念。
+In terms of form, the Runes protocol has deviated significantly, having no connection to the Ordinals protocol. This means that the existing infrastructure for Ordinals cannot support the Runes protocol, requiring redevelopment. However, in essence, the Runes protocol is more similar to BRC-20, as both have built a new ledger but haven't fully utilized the concept of satoshis.
 
-
-数据写入方式和格式  
+Data Writing Method and Format
 ----
-ordx的数据全部都封装在Ordinals定义的”信封“里面，采用BRC-20这样已经被用户接受并认可的json格式，写在隔离见证区域。  
-Runes协议数据写在OP_RETURN中，因为写入空间有限，采用紧凑的数据格式，无法直接看到内容。
+The data in ordx is encapsulated within the "envelopes" defined by the Ordinals protocol, using the widely accepted and recognized JSON format, similar to BRC-20. This data is written in the segregated witness area.
 
-跟聪的绑定关系  
+In contrast, the Runes protocol writes data in the OP_RETURN field, which has limited space. Therefore, it adopts a compact data format that cannot be directly viewed.
+
+Relationship with Satoshis
 ----
-ordx资产是跟聪严格绑定的，这得益于Ordinals协议对聪的编号，让ordx资产在铸造时就跟一个聪绑定，这种绑定是永久性的，不管聪在哪里。因为对聪进行编号，所以每个聪在ordx协议中都是独特的，可以识别的。  
-Runes协议没有使用Ordinals协议，也不绑定聪。
+ordx assets are strictly bound to satoshis, thanks to the numbering of satoshis in the Ordinals protocol. This binding is permanent, regardless of the location of the satoshis. Each satoshi is unique and identifiable within the ordx protocol due to the numbering of satoshis.
 
-转移
+The Runes protocol does not use the Ordinals protocol and does not bind to satoshis.
+
+Transfer
 ----
-ordx转移时跟BTC的转移一样，没有任何额外要求。
-Runes跟BRC-20类似，需要通过转移指令才能转移。比BRC-20好的地方是不需要先铭刻再转移，而是在转移时将转移指令写在OP_RETURN中。
+The transfer of ordx is similar to the transfer of BTC, without any additional requirements.
 
+Runes, similar to BRC-20, requires a transfer instruction for the transfer to occur. The advantage over BRC-20 is that it does not require engraving before transferring; instead, the transfer instruction is written in the OP_RETURN field during the transfer.
 
-烧毁
+Burning
 ----
-ordx资产跟聪绑定，聪无法烧毁，ordx资产也就无法烧毁。确实要烧毁的话，可以主动把聪打入中本聪地址。
-Runes提供了烧毁选项，用户可以主动选择烧毁。
+Ordx assets are bound to satoshis and cannot be burned since satoshis cannot be destroyed. If burning is desired, the satoshis can be sent to the genesis address.
 
+The Runes protocol provides a burning option, allowing users to actively choose to burn assets.
 
-拆分方案  
+Splitting Mechanism
 ----
-ordx可以灵活利用utxo模型，直接拆到一个utxo中只有一个聪有ordx资产，但是聪是最小单位，不能再拆。  
-Runes跟BRC-20类似，采用自己的一套账本，所以想怎么分就怎么分，多少位小数都行。
+Ordx can flexibly utilize the UTXO model and split into a single UTXO containing only one satoshi with the ordx asset. However, satoshis are the smallest unit and cannot be further split.
 
-学习成本
+Runes, similar to BRC-20, uses its own ledger, allowing for flexible splitting. Users can determine the decimal places for splitting.
+
+Learning Curve
 ----
-ordx参考了brc-20协议，复用brc-20的铭文格式。好处是大家已经接收并熟悉brc-20的铭文格式，基本没有学习成本，只需要了解其中的不同参数。
+ordx references the BRC-20 protocol and reuses the token format from BRC-20. The benefit is that users are already familiar with and have accepted the token format of BRC-20, resulting in minimal learning curve, requiring only an understanding of the different parameters involved.
 
-Runes没有用户直接可读的协议格式，因为Runes的数据是写在OP_RETURN中，仅限制80字节，只能采用紧凑的数据格式，用户无法直接看到协议内容，陌生感比较强。而且其发行、铸造、转移的技术跟BRC-20相差也很大。所有的差异，都会造成很大的学习成本。
+Runes does not have a user-readable protocol format since its data is written in the OP_RETURN field, limited to 80 bytes, and can only use a compact data format. Users cannot directly see the protocol content, which creates a stronger sense of unfamiliarity. Furthermore, the technology for issuance, minting, and transfer in Runes differs significantly from BRC-20. All these differences contribute to a significant learning curve.
 
-
-分发
+Distribution
 ----
-ordx协议非常推荐公平分发，在协议的设计上充分支持公平分发的需求，但是也不排斥项目方完全自己控盘的方式。怎么使用完全由项目方自主决定。ordx完全开放，协议开发团队在协议生态中并没有掌握任何额外的资源，一切资源都开放给社区，由社区自主建设。
+ordx protocol strongly advocates for fair distribution and fully supports the need for fair distribution in its design. However, it does not exclude the possibility of a project fully controlling the distribution. How to use it is entirely determined by the project. The ordx protocol is completely open, and the protocol development team does not control any additional resources in the protocol ecosystem. All resources are open to the community for independent development.
 
-Runes协议目前看起来不够开放，看起来像是一个项目方，而不是协议方：
-    1. ticker的名字要慢慢释放，名字作为一个资源被控制住了。
-    2. 之前各种使用Runes协议发行的资产要如何处理？仅仅是为了争一个first is first，就禁止他们升级到正式的Runes协议吗？这是更中心化的做法。
+The Runes protocol currently appears to be less open, resembling a project rather than a protocol:
+1. The release of ticker names is being slowly controlled, with the names treated as a resource.
+2. How will previously issued assets using the Runes protocol be handled? Will they be prevented from upgrading to the official Runes protocol just to compete for being the first? This is a more centralized approach.
 
 
-小结
+Summary
 ----
-Runes不使用Ordinals协议，这让我们非常的失望，对Runes失望。  
-看起来把Ordinals协议放到类似IP/TCP协议地位的，也就只有ordx协议的开发团队了。我们将坚持这个结论，持续推进Ordinals协议的基础建设和应用，让基于Ordinals协议发行的资产，占据BTC生态的重要地位。
+Runes does not use the Ordinals protocol, which greatly disappoints us regarding Runes. It seems that only the development team of the ordx protocol recognizes the importance of the Ordinals protocol, placing it in a similar position to the IP/TCP protocol. We will adhere to this conclusion and continue to promote the infrastructure and applications of the Ordinals protocol, ensuring that assets issued based on the Ordinals protocol hold a significant position in the BTC ecosystem.
 
-
-（未完结，等待更新）
-
+(To be continued, awaiting updates)

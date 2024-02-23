@@ -1,13 +1,9 @@
-客户端验证
+Client Verification
 ====
 
+It is not practical to rely solely on an indexer for verification, considering factors such as efficiency and cost. Our goal is to enable clients to independently verify assets based on the data from the mainnet, with the indexer serving as a means of efficient data access support. Additionally, the Ordinals protocol itself requires an indexer service to track sats. The ordx protocol needs to know which tickers have been deployed in which blocks and which mints have been successful. However, data beyond this is not necessary.
 
+The deploy and mint commands of the ordx protocol are specifically designed to achieve this goal.
 
-完全不依赖indexer是不现实的，无论是从效率和成本等方面考虑都是这样。我们的目标是客户端可以根据主网的数据自行验证资产，indexer仅仅是提供一个高效率的数据访问支持。另外Ordinals协议本身也需要一个indexer服务，用于对sat的跟踪。而ordx协议需要知道哪些ticker在哪个区块被部署过，并且哪些mint是成功。除此之外的数据都不是必须的。
-
-ordx协议的deploy和mint命令，就是为了达成这个目标而特殊设计的。  
-
-现在来看看客户端如何对资产进行验证：  
-比如，某个钱包宣称其拥有某个ordx协议的资产，比如名字为A，数量为n。为了验证该钱包拥有这个资产，只需要定位到是哪个utxo的哪个sat铭刻了该资产，然后回溯该utxo，直到找到mint时的铭文。如果能找到，就检查这次mint是否满足A的规则。以上过程只需要有ordinals协议的服务支持，客户端就可以自主完成资产有效性的验证。ordx协议也可以提供高效的查询服务，让钱包能直接查询该utxo中的SatRange是否在A的有效mint的SatRange中。客户端不需要信任我们提供的数据，因为客户端可以非常容易通过ordinals.com对我们提供的数据进行验证。
-
-
+Now let's take a look at how clients can verifiy assets:
+For example, suppose a wallet claims to own an asset under the ordx protocol, named A, with a quantity of n. To verifiy that the wallet indeed owns this asset, it only needs to locate which utxo and sat inscribe that asset, and then trace back to the inscription at the time of minting. If found, the client can check if this mint satisfies the rules of A. This entire process only requires the support of the Ordinals protocol service, enabling the client to independently verifiy the asset's validity. The ordx protocol can also provide efficient query services, allowing wallets to directly query whether the SatRange of the utxo falls within the valid SatRange of minting for A. Clients do not need to trust the data provided by us because they can easily verify the data we provide through ordinals.com.

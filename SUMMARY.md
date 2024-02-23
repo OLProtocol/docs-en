@@ -1,31 +1,31 @@
 # Table of contents
 
 * Ordinals X
-  * [Summary](OrdX/README.md)
+  * [Overview](OrdX/README.md)
   * [Background](OrdX/background.md)
   * [Instruct](OrdX/instruct.md)
-  * 探讨
-    * [设计理念](OrdX/concept.md)
-    * [Ordinals协议是BTC生态的IP协议](OrdX/ordinals.md)
-    * [再谈为何Ordinals协议足以比肩IP协议](OrdX/ordinals2.md)
-    * [ordx协议的基础属性和潜力](OrdX/potential.md)
-    * [ordx协议的图币二象性](OrdX/duality.md)
-    * [为什么需要一币一聪的方案](OrdX/oneone.md)
-    * [转移](OrdX/transfer.md)
-    * [客户端验证](OrdX/appverify.md)
-    * [拆分问题](OrdX/dust.md)
-    * [拆分方案](OrdX/substract.md)
-    * [重复铭刻](OrdX/multiscribe.md)
-  * 协议比较
-    * [对比表格](OrdX/compare.md)
-    * [跟Atomicals协议的比较](OrdX/c2atom.md)
-    * [跟Runes协议的比较](OrdX/c2runes.md)
-  * [用例](OrdX/usecase.md)
-    * [BTC上第一个在特殊聪上铸造的Token：矿工的翡翠](OrdX/usecase-jades.md)
+  * Discuss
+    * [Design Concept](OrdX/concept.md)
+    * [Ordinals protocol is the IP protocol of the BTC ecosystem](OrdX/ordinals.md)
+    * [Why the Ordinals protocol is comparable to the IP protocol](OrdX/ordinals2.md)
+    * [Basic properties and potential of the ordx protocol](OrdX/potential.md)
+    * [The duality of ordx protocol’s graphics and tokens](OrdX/duality.md)
+    * [Why is the one-token-one-satoshi solution needed?](OrdX/oneone.md)
+    * [Transfer](OrdX/transfer.md)
+    * [Client verificaton](OrdX/appverify.md)
+    * [Problem of split](OrdX/dust.md)
+    * [Proposal of split](OrdX/substract.md)
+    * [Multiple inscription](OrdX/multiscribe.md)
+  * Protocol comparison
+    * [Comparison table](OrdX/compare.md)
+    * [Comparison with the Atomics protocol](OrdX/c2atom.md)
+    * [Comparison with Runes protocol](OrdX/c2runes.md)
+  * [Usecase](OrdX/usecase.md)
+    * [The first token on BTC minted on special satoshis: the Miner’s Jades](OrdX/usecase-jades.md)
 * OLDEX
-  * [概述](oldex/README.md)
+  * [Overview](oldex/README.md)
 * FAQ
-  * [如何判断一个Ordinals NFT是ordx资产](QA/failmint.md)
-* [规划](roadmap.md)
+  * [How to determine if an Ordinals NFT is an ordx asset](QA/failmint.md)
+* [Roadmap](roadmap.md)
 * [Donate](donate.md)
 * [About](README.md)

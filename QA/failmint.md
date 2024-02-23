@@ -1,19 +1,16 @@
-如何判断一个Ordinals NFT是ordx资产
+How to Determine if an Ordinals NFT is an ordx Asset
 ====
 
+Every result minted by ordx is a standard Ordinals NFT and can be transferred as any other Ordinals NFT.
 
-每一个ordx铸造的结果都是标准的Ordinals NFT，可以按照Ordinals NFT的方式进行转移。    
+However, due to the unique nature of ordx assets, when conducting off-chain transactions involving ordx assets, it is necessary to verify the authenticity of the NFT. All the required data for verification can be found on the Ordinals official website (Ordinals.com) or the unisat wallet. Let's use an example of a #Pearl NFT to illustrate how to identify if an NFT is a valid ordx asset.
 
-但是，因为ordx资产铸造的特殊性，在场外进行ordx资产交易的时候，需要对该NFT进行识别，识别所需的所有数据都来Ordinals官方网站（Ordinals.com）或者unisat钱包。如何识别一个NFT是否是有效的ordx资产，我们拿一个 #Pearl 来说明。
+1. Obtain the inscription number (#59808557) or the inscription ID (3df5e300dc0b8c67af5dfffb33db0519702138e3728ff6a3a0b6b45426b986bci0) of the NFT from https://ordinals.com/inscription/3df5e300dc0b8c67af5dfffb33db0519702138e3728ff6a3a0b6b45426b986bci0.
+2. Search for the visible content on the Ordinals website, which should be {"p":"ordx","op":"mint","tick":"Pearl","amt":"10000"}.
+3. Pay close attention to the following details: the protocol is ordx, the operation is mint, the ticker is Pearl, and the amount is 10000. Additionally, it is important to be familiar with the deployment details of Pearl: {"p":"ordx","op":"deploy","tick":"Pearl","block":"828200-828800","lim":"10000","des":"The Oriental Pearl."} (If not familiar, refer to ordx.space or this link: https://ordinals.com/inscription/4e37618704dbba19f9c26e4eaf99be03bd66e41909f9906d66e886993e32289fi0). Pearl requires minting within the range of 828200-828800, with a maximum of 10000 coins minted per batch. This is a crucial checkpoint.
+4. Looking back at the information of the NFT, we can see that the output value is 10000, which is correct. However, the genesis height is 828809, which exceeds the required range specified in the deployment details. Therefore, this is an invalid ordx asset.  
 
-1. 获取该nft的铭文序号（#59808557），或者铭文ID（3df5e300dc0b8c67af5dfffb33db0519702138e3728ff6a3a0b6b45426b986bci0） https://ordinals.com/inscription/3df5e300dc0b8c67af5dfffb33db0519702138e3728ff6a3a0b6b45426b986bci0
-2. 在ordinals网站查询可见内容，{"p":"ordx","op":"mint","tick":"Pearl","amt":"10000"}
-3. 这里需要重点关注，协议是ordx，op是mint，tick是Pearl，amt是10000，同时，我们需要熟悉Pearl的deploy的内容：{"p":"ordx","op":"deploy","tick":"Pearl","block":"828200-828800","lim":"10000","des":"The Oriental Pearl."}（不熟悉的话在ordx.space查看，或者查看这个链接：https://ordinals.com/inscription/4e37618704dbba19f9c26e4eaf99be03bd66e41909f9906d66e886993e32289fi0），Pearl要求在区间828200-828800区间铸造，每次铸造最多10000个币，这是重点检查内容。
-4. 回到这个nft的信息，我们可以看到output value是10000，这没问题；查看genesis height是828809，超出deploy所要求的区间了，所以这是一个无效的ordx资产。
+Another method to determine the validity of an ordx asset is through the unisat wallet:
+Ordinals NFTs recognized as ordx assets in the unisat wallet can be selected, and their content and occupied sats should be examined. Scroll to the end and click on the genesis transaction to view the minting height in the mempool. If it falls within the required range, then it is a valid ordx asset.
 
-
-另外一种在unisat钱包做判断的方法：
-ordx资产在unisat中被识别为一个Ordinals NFT，选择该NFT，关注下内容和占用的sats，然后滚动到最后，点击genesis transaction，跳到mempool查看该NFT的铸造高度，如果在要求范围内，就是有效的ordx资产。  
-
-
-官网会提供根据铭文序号查询是否是ordx资产的功能。
+The official website will provide a functionality to query whether an NFT is an ordx asset based on its inscription number.

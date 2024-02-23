@@ -1,15 +1,15 @@
-协议比较
+Protocol Comparison
 =====
 
 
 | - | OrdX | BRC-20 | Atomicals |
 | :--: | :----: | :----: | :----: | 
-| 价值主张 | 数字珍宝 | - | 数字对象 |
-| 资产类型 | FT | FT | NFT+FT | 
-| 铸造方法 | 基于ord的信封写入隔离见证区 | 基于ord的信封写入隔离见证区 | 使用"atom"进行承诺&揭露的信封 | 
-| 索引 | 依赖ordx索引器 | 依赖brc-20索引器 | 依赖electrumx索引器 | 
-| 验证 | 通过ordx索引器验证，可以客户端验证 | 通过brc-20索引器验证，无法客户端验证 | 通过electrumx索引器验证，理论上可以客户端验证 |
-| 转移 | 直接转移 | 先铭刻，再转移 | 直接转移 | 
-| 基本单位 | 一个sat代表一份资产，资产跟sat绑定，不可变更 | 跟地址绑定 | 期望是一sat一token，但实际会根据EXP参数调整 | 
-| 拆分方案 | 可拆分，灵活利用UTXO规则可以将一个包含只有546个sat的某种资产分成任意两个部分，可以重复操作 | 无限可分 | 使用ST操作符和Exp参数进行拆分（和其原子性原则有冲突） | 
-| 烧毁可能性 | sat不可烧毁，资产也就无法烧毁 | 不可烧毁 | 使用错误的钱包或者错误的使用方式容易导致token被烧毁 | 
+| Value Proposition | Digital Treasures | - | Digital Objects |
+| Asset Type | FT | FT | NFT+FT | 
+| Minting Method | Envelope-based writing in isolated witness area based on ord | Envelope-based writing in isolated witness area based on ord | Envelope-based commitment & disclosure using "atom" | 
+| Indexing | Relies on ordx indexer | Relies on BRC-20 indexer | Relies on electrumx indexer | 
+| Verification | Verified through ordx indexer, client-side verification possible | Verified through BRC-20 indexer, client-side verification not possible | Verified through electrumx indexer, theoretically possible for client-side verification |
+| Transfer | Direct transfer | Insrcibe first, then transfer | Direct transfer | 
+| Base Unit | One sat represents one unit of the asset, asset is bound to sats and cannot be changed | Bound to addresses | Expected to be one token per sat, but can be adjusted based on the EXP parameter | 
+| Splitting Solution | Can be split, utilizing UTXO rules to divide an asset with only 546 sats into arbitrary parts, can be repeated | Infinitely divisible | not yet been finalized | 
+| Possibility of Burning | Sats cannot be burned, thus assets cannot be burned | Cannot be burned | Possibility of token being burned due to using the wrong wallet or incorrect usage |

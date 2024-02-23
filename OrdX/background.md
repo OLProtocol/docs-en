@@ -1,44 +1,38 @@
-背景
-=====
+Background
+====
+
+Reasons for the Need for ordx
+----
+1. Enhancing the Ordinals protocol to enable the issuance of fungible tokens (FTs) in addition to non-fungible tokens (NFTs).
+2. Implementing the fundamental concept of the Ordinals protocol, where a satoshi (sat) is the basic unit of BTC and is tied to an asset, whether it's an NFT or FT, ensuring immutability.
+3. Promoting the application of the Ordinals protocol by solidifying its core content, avoiding complications caused by protocol upgrades. This benefits existing assets based on the Ordinals protocol (such as BRC-20) and attracts more projects developed on the Ordinals protocol.
+4. Addressing issues with the BRC-20 protocol, which requires inscribing before transferring tokens and necessitates additional ledger to track the transfer history of BRC-20 assets.
+5. Providing an upgrade option for BRC-20 assets to migrate directly to the ordx protocol and become ordx assets.
+6. Mitigating the risk of token burn, which can occur more easily with the Atomicals protocol.
+7. Preparing for trading Ordinals assets on the Lightning Network (OLD protocol).  
 
 
-需要ordx的原因
------
-1. 增强Ordinals协议，让Ordinals协议也可以发行FT。
-2. 贯彻Ordinals协议的理念：聪是BTC的基本单位，一个聪，一份资产，不管是NFT还是FT，聪跟资产绑定，不可变更。
-3. 推广Ordinals协议的应用：固化Ordinals协议的核心内容，避免Ordinals协议升级带来的麻烦，这对现有的基于Ordinals协议的资产（比如BRC-20）有好处，也能吸引更多基于Ordinals协议进行开发的项目。
-4. 避免BRC-20协议的问题：BRC-20协议在transfer时需要先铭刻再转账，需要额外的账本跟踪BRC-20资产的转移历史。
-5. 为BRC-20的资产提供升级选项：BRC-20资产可以直接upgrade到ordx协议，成为ordx资产。
-6. 避免token被烧毁的可能：Atomicals协议容易发生token被烧毁的问题。
-7. 为探索在闪电网络上交易Ordinals资产做好准备（OLD协议）。
+Ordinals Protocol
+----
+The core content of the Ordinals protocol can be summarized in two aspects:
+1. Ordinals Theory: The theory of numbering and tracking each sat on the BTC network.
+2. Inscribe Technology: The technology of inscribing data on sats, including the numbering of inscriptions, definition of content format, and rules for writing on the BTC mainnet.  
 
+The Ordinals protocol ensures the uniqueness and immutability of sat numbers and defines the format and content of inscriptions. Based on this foundation, various protocols can be developed, such as the BRC-X protocol. Clearly, the Ordinals protocol can be seen as the IP/TCP protocol, and other protocols are specialized protocols built on top of IP/TCP. The prosperity of various protocols signifies the thriving BTC ecosystem (similar to the various protocols built on top of IP/TCP, establishing the internet). If we consider the Ordinals protocol as such a foundational protocol, ensuring the stability of the Ordinals protocol becomes the primary requirement. Any modifications to the core content of the Ordinals protocol will disrupt the protocols and assets built on top of it, ultimately hindering the development of the BTC ecosystem (bug fixes and technical optimizations are not problematic).
 
-Ordinals协议
------
-Ordinals协议的核心内容，基本上可以总结为这两个方面的内容：
-1. Ordinals理论：为每一个聪编号并跟踪其在BTC网络上的转移的理论。
-2. Inscribe技术：在聪上铭刻数据的技术，这表现为对铭刻进行编号，内容格式的定义，写入BTC主网的规则等。
+However, it appears that the creator of the Ordinals protocol, Casey, is currently primarily interested in the Runes protocol. Mixing the Ordinals and Runes protocols may introduce uncertainty to the core content of the Ordinals protocol. For example, there might be modifications and adjustments to the core content of the Ordinals protocol to better serve the needs of the Runes protocol. This is akin to modifying the IP/TCP protocol specifically to support and optimize the HTTP protocol, which could have adverse effects on other protocols dependent on IP/TCP. The best approach is to separate the Ordinals protocol and solidify its core content. Bug fixes and performance optimizations can still be made, and additional features can be added based on community demand. However, the core content of the Ordinals protocol should not be modified solely to support a specific protocol. Our hope is that the Ordinals protocol will eventually become the most fundamental protocol supporting the BTC ecosystem, akin to the great IP/TCP protocol, and that the BTC ecosystem will grow into a value internet surpassing the internet itself.
 
-Ordinals协议确保了聪编码的不变和唯一性，规定了铭刻数据的格式和内容。在这个基础上可以发展丰富多彩的各种协议，比如BRC-X协议。很明显，Ordinals协议可以看做是IP/TCP协议，其他协议都是基于IP/TCP的面向特殊应用的协议。各种协议的繁荣，才是BTC生态繁荣的标志（参考IP/TCP之上的各种协议和最终建立起来的互联网）。如果将Ordinals协议看做这样的底层协议，那保证Ordinals协议的稳定就是压倒一切的要求。任何对Ordinals协议核心内容的修改，都会导致Ordinals协议之上各种协议和资产的动荡，最终损害了BTC生态的发展（修改bug和技术性优化不会有问题）。  
+A salute to Casey, the creator of the protocol.
 
+BRC-20 Protocol
+----
+The BRC-20 protocol is based on the Ordinals protocol and uses the Deploy-Mint-Transfer methods to issue FTs. The basic principle involves establishing a ledger within the data inscribed on sats. This approach introduces two issues: firstly, when transferring tokens, a new inscription must be made to indicate the transfer of tokens and the quantity, resulting in complexity and higher fees for transfers. Secondly, it requires off-chain services to provide indexing, which can easily lead to centralization, contradicting the fundamental principles of BTC. However, as a meaningful attempt, BRC-20 has demonstrated the feasibility of issuing FTs on BTC and greatly expanded the imaginative space for the Ordinals protocol. The total value of assets in BRC-20 now signifies the value of the BRC-20 protocol, and the contributions of its creators to the BTC ecosystem are significant.
 
-但是，看起来Ordinals协议的创始人Casey目前的主要兴趣在Runes协议，而Ordinals协议和Runes协议混在一起，可能会对Ordinals协议的核心内容造成不确定性的影响。比如可能会对Ordinals协议的核心内容做一些修改和调整，使其更适合Runes协议的需求。这相当于因为HTTP协议大有前途，所以想修改IP/TCP协议，让IP/TCP协议为HTTP协议做最直接的支持和优化，但这可能会对其他依赖IP/TCP协议造成不良的影响。最佳的方式，其实就是将Ordinals协议分离出来，固化其核心内容。可以修改bug优化性能，以后也可以根据社区要求增加特性，但不能仅仅因为一个团队希望支持某个特定协议就修改Ordinals协议的核心内容。我们希望，Ordinals协议最终可以成为支撑BTC生态的最核心最基础的协议，成为像IP/TCP一样伟大的协议，而BTC生态能成长为超越互联网的价值互联网。
+A salute to Domo, the creator of the protocol.
 
+Atomicals Protocol
+----
+The Atomicals protocol is a highly promising protocol, with notable technological advancements, conceptual innovations, and the visionary scope of its creators. However, the complexity of the transfer principles in Atomicals, particularly the rules, has led to the problem of token burn resulting from user misbehavior. Additionally, the token splitting technology does not align with our aesthetic standards as it contradicts our concept of one sat corresponding to one asset. These divergent technical choices have ultimately propelled us to advance the ordx protocol.
 
-向协议的创造者Casey致敬。  
-
-
-BRC-20协议
------
-BRC-20协议是基于Ordinals协议，通过DMT技术发行FT的协议，基本原理是在铭刻在聪上的数据中建立一个账本。这也带来两个问题，一个是转移token时，必须铭刻一个新的数据说明转账token和数量，导致转账的复杂性和费用较高；另外一个是需要有链下服务提供索引服务，这很容易导致中心化问题，违背BTC的基本原则。但是BRC-20作为一项有意义的尝试，至少证明在BTC上发行FT的可行性，也大大拓展了Ordinals协议的想象空间。现在BRC-20的资产总额，已经说明了BRC-20协议的价值，协议的创造者对BTC生态的贡献也是巨大。
-
-向协议的创造者Domo致敬。  
-
-
-Atomicals协议
------
-Atomicals协议是非常有潜力的协议，不论是其技术、其理念、还是协议创造者的格局，都是值得敬佩的。不过atmoicals的transfer原则太过于复杂，这些复杂的规则导致了用户的不当行为带来的资产烧毁问题。另外其拆分token的技术方案不符合我们的审美标准，因为这跟我们的一个聪一份资产的理念不一致。这些技术选择上的不同，最终导致了我们推进了ordx协议。  
-
-Atomicals协议跟Ordinals协议虽然有很多相似的地方，但是理念和实现的方式很不同。可以说，Atomicals协议和Ordinals协议是处在同一层次，并且相互竞争。技术上的良性竞争和相互磨砺最终将促进技术的发展，我们一起见证Ordinals协议和Atomicals协议的交锋和相互激发，共同前进。
-
+The Atomicals protocol and the Ordinals protocol have many similarities, but they differ significantly in terms of concepts and implementation. It can be said that the Atomicals protocol and the Ordinals protocol exist at the same level and compete with each other. This healthy competition and mutual inspiration will ultimately promote the development of technology. Let us witness the confrontation and mutual stimulation between the Ordinals protocol and the Atomicals protocol, and move forward together.
 

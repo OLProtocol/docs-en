@@ -1,6 +1,6 @@
-转移
+Transfer
 ====
 
-OrdX协议不需要铭刻transfer指令，就可以直接转移OrdX资产，因为每一份资产，都已经铭刻在每一个sat上，跟sat绑定了。sat本身发生了转移，也就意味着资产也发生了转移。所有需要遵循的规则，就仅仅是Ordinals协议规定的sat的转移规则。在我们还没有提供更方便的转移工具和交易工具之前，用户可以使用任意支持Ordinals协议的钱包（比如unisat钱包），根据Ordinals协议的转移规则，对OrdX的资产进行转移。目前unisat钱包并不支持OrdX协议，但是其将OrdX的资产识别为Ordinals NFT，将这个NFT转移给其他人，也就意味着OrdX的资产发生了正确的转移。
+The OrdX protocol does not require a specific "transfer" command to transfer OrdX assets because each asset is already inscribe on each satoshi, making it bound to the satoshi. When a satoshi is transferred, it implies the transfer of the associated asset. The only rules to follow are the transfer rules specified by the Ordinals protocol for sats. Until we provide more convenient transfer and transaction tools, users can use any wallet that supports the Ordinals protocol (such as Unisat wallet) to transfer OrdX assets according to the transfer rules of the Ordinals protocol. Currently, the Unisat wallet does not support the OrdX protocol directly, but it recognizes OrdX assets as Ordinals NFTs. By transferring this NFT to another person, the OrdX asset is correctly transferred.
 
-在以后，如果我们发现需要定制一个OrdX的钱包，我们会考虑做一个。目前来看，使用支持Ordinals协议的钱包已经足够了。
+In the future, if we find the need to create a dedicated OrdX wallet, we will consider developing one. However, for now, using a wallet that supports the Ordinals protocol is sufficient.

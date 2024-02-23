@@ -1,12 +1,14 @@
-ordx协议的图币二象性
+The Duality of Graph and Token in the OrdX Protocol
 ====
 
-ordx协议基于Ordinals协议，而Ordinals协议是用来铸造NFT的，从技术的原生性来说，ordx协议的铸造结果是具备图币二象性的：ordx资产从Ordinals协议的角度来看，就是一个标准的Ordinals NFT；从ordx协议的角度看，就是一个具备n个聪的可拆分的资产，一币一聪。
+The OrdX protocol is based on the Ordinals protocol, which is used for minting NFTs. From a technical perspective, the result of minting in the OrdX protocol possesses the duality of graph and token: From the perspective of the Ordinals protocol, OrdX assets are standard Ordinals NFTs, and from the perspective of the OrdX protocol, they are divisible assets with n satoshis, one token per satoshi.
 
-第一版的ordx协议不支持在部署或铸造时添加图像的数据文件，在Ordinals协议中也仅仅是展示了ordx协议的json内容。现在我们正在开发增强图币二象性方面的功能，挖掘图币二象性的新玩法。
+The first version of the OrdX protocol does not support adding image data files during deployment or minting. In the Ordinals protocol, it only displays the JSON content of the OrdX protocol. We are currently developing functionalities to enhance the duality of graph and token and exploring new ways to utilize them.
 
-1. 最基础的玩法：铸造时是一张图，拆分是币。铸造时增加了图的数据，铸造完成时得到一个图像类NFT，但是又具备ordx资产的属性，定义了占据多少聪，可以按照一币一聪的原则将这个NFT拆分成币。我们可以将一张图按照多少聪进行切割，一聪占据一部分的数据。
-2. 增强玩法1：收集足够的币，可以重新聚合为图。这里有跟其他协议不同的玩法，因为每个币都是聪，其实每个币都是独特的，它携带的数据也是独特，不是说聚合足够的币就能重新生成图，而是需要不同的部位。可以想象成拼图游戏，每个小拼图都是不一样。
-3. 增强玩法2：合集可以是一张大图的碎块，收集足够多的图，可以组装成一个隐藏更多信息的大图，嗯，可以是藏宝图。
+1. The basic gameplay: The minting process involves a picture, and splitting involves tokens. By adding image data during minting, a graph-based NFT is obtained upon completion of minting. However, it still possesses the properties of OrdX assets, defining how many satoshis it occupies. According to the principle of one token per satoshi, this NFT can be split into tokens. We can divide a picture into parts based on the number of satoshis, with each satoshi occupying a portion of the data.
 
-图币一体的玩法是无限，特别是在游戏中，有兴趣的家人可以多研究，也可以给我们提建议。
+2. Enhanced gameplay 1: Collecting enough tokens allows them to be reassembled into a picture. This introduces a different gameplay compared to other protocols because each token is a satoshi and carries unique data. It is not simply a matter of aggregating enough tokens to regenerate the picture, but rather different parts are required. It can be imagined as a puzzle game where each small puzzle piece is unique.
+
+3. Enhanced gameplay 2: Collections can be fragments of a larger picture. By collecting enough pictures, they can be assembled into a larger picture that hides more information. It can be likened to a treasure map.
+
+The possibilities for gameplay involving the duality of graph and token are limitless, especially in games. We encourage interested individuals to explore further and provide us with suggestions.

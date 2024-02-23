@@ -1,26 +1,25 @@
-ordx协议的基础属性和潜力
+The Fundamentals and Potential of the ordx Protocol
 ====
 
-ordx协议基于Ordinals协议，增强Ordinals协议，所以其最基础的属性就是源于这句话：基于和增强Ordinals协议。分拆来看，就是这样两部分：
+The ordx protocol is based on the Ordinals protocol and enhances it, so its fundamental attributes can be summarized as "based on and enhanced from the Ordinals protocol." Let's break it down into two parts:
 
-基于Ordinals协议
+Based on the Ordinals Protocol
 ----
-1. 对聪编号（寻址）
-2. 在聪上铭刻数据（读写数据）
+1. Addressing through satoshi numbering
+2. Inscribing data on satoshis (reading and writing data)
 
-增强Ordinals协议
+Enhancing the Ordinals Protocol
 ----
-1. 扩展Ordinals在聪上铭刻NFT数据的能力，按照一币一聪，不完全染色的原则，发行Fungible Token。
+1. Expanding the ability of the Ordinals protocol to inscribe NFT data on satoshis by following the principle of one token one satoshi and issuing fungible tokens (FTs).
 
+The above is the core content of the ordx protocol, which is very simple and easy to understand. However, based on this foundation, the ordx protocol can easily support various new concepts in the market, such as:
+1. SFT (Semi-Fungible Token): This is the essence of ordx assets. When minted, it is a standard Ordinals NFT, but it can be split into ordx assets of one satoshi at any time.
+2. The duality of Graph and token: This is a further development of SFT. By adding graph data during minting, it can be split into tokens at any time or aggregated into graphs.
+3. Permanent mining: This is the latest capability introduced by the Atomicals protocol, but for the ordx protocol, it is inherently present because the ticks deployed by the ordx protocol have no quantity or height restrictions. However, to prevent unlimited inflation of minted tokens, the ordx protocol specifies the attributes of satoshis, and only suitable satoshis can be minted.
 
-以上就是ordx协议的核心内容，非常的简单易懂。但是，在这样的基础上，ordx协议非常容易就能支持市面上各种新概念，比如：
-1.SFT，半均质化Token：这是ordx资产的本质，铸造完成时是一个标准的Ordinals NFT，但是随时可以分拆成一聪的ordx资产。
-2.图币二象性：这是SFT的进一步发展，铸造是增加图的数据就可以了，随时都可以拆成币，也可以聚合成图。
-3.永久挖矿：这是Atomicals协议最新推出的能力，但是对于ordx协议来说，这是天然具备的，因为ordx协议部署的tick，本来就没有数量的限制，也可以没有高度的限制。但是为了防止无限膨胀的铸币，ordx协议规定了聪的属性，适合条件的聪才可以铸造。
-
-独特能力
+Unique Capabilities
 ----
-1. 在特殊聪上铸造FT：这是ordx协议的特色，比如将每个块的第一个聪铸造成Token。
-2. 创造力挖矿：这是ordx协议的特殊能力。跟Atomicals协议依赖难度和算力来挖矿是完全不同的路线，这是考验和探索人类创造力创新力的极限的挖矿模式。这个以后会慢慢揭露。
+1. Minting FT on special satoshis: This is the highlight of the ordx protocol, such as minting a token on the first satoshi of each block.
+2. Creativity mining: This is a special capability of the ordx protocol. It takes a completely different approach from the Atomicals protocol, which relies on difficulty and computational power for mining. It explores the limits of human creativity and innovation in the mining process. This will be gradually revealed in the future.
 
-综上所述，ordx协议继承了Ordinals协议的简单和优美，以其开放性和可拓展性，有着无限的想象能力和适应性，期望大家能加入一起挖掘ordx协议的潜力，共同建设BTC生态。
+In conclusion, the ordx protocol inherits the simplicity and elegance of the Ordinals protocol. With its openness and scalability, it has unlimited imagination and adaptability. We hope that everyone can join in exploring the potential of the ordx protocol and contribute to the development of the BTC ecosystem.

@@ -1,3 +1,3 @@
-跟BRC-20协议的比较
+Comparison with the BRC-20 Protocol
 ====
 

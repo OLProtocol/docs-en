@@ -1,8 +1,10 @@
-为什么需要一币一聪的方案
+Why the "One Token One Satoshi" Solution is Needed
 ====
 
-经常有人问我们，一币一聪有什么价值？或者说价值来源是什么？我们的答案是这样：
-1. 价值支撑。一币一聪给了资产一个原始的支持点，让人不会觉得是空气。即使你铸造的资产最终失败了，聪是你永远不会归零的资产；甚至可以认为是变相的锁仓，会因为BTC的升值而升值。回头看这些铸造资产的行为，最差的结局，就是损失了铸造时的手续费，但是换来一个可能千倍万倍的机会。
-2. 生态发展的必要条件。我们之前谈论过BTC生态发展必不可少的两个条件，一个发行资产的能力，一个是能支持高并发的二层网络，而且这两个都必须是BTC原生的能力，因为改变BTC共识的尝试基本无一成功，就算能成功也是耗时多年，BTC生态等不起。而一币一聪，是BTC原生的资产发行方式（聪就是资产，资产就是聪），也是原生的二层网络必然支持的，因为原生的二层网络必然支持BTC，而聪就是BTC，资产也是聪。
+Many people often ask us what value there is in the "one token one satoshi" solution or where its value comes from. Our answer is as follows:
 
-所以，一币一聪的价值其实是超乎我们的想象的。这也是我们一直认为Ordinals协议的潜力还远远没有挖掘的原因。一币一聪，其实是资产跟聪绑定的简化描述。
+1. Value Support: The "one token one satoshi" approach provides a fundamental support point for assets, making them feel tangible and not just empty. Even if the assets you mint ultimately fail, the satoshis remain as an asset that will never be worth zero. In fact, they can be considered a form of locked assets that appreciate with the increase in BTC's value. Looking back at the act of minting these assets, the worst outcome would be losing the minting fees paid, but in return, you gain the potential for immense opportunities that could be worth thousands or even millions of times more.
+
+2. Necessary for Ecological Development: We've previously discussed the two essential conditions for the development of the BTC ecosystem: the ability to issue assets and the ability to support high-concurrency Layer 2 networks. Both of these capabilities must be native to BTC because attempts to change the BTC consensus have almost universally failed, and even if successful, they would take years, which the BTC ecosystem cannot afford. The "one token one satoshi" solution is a native asset issuance method for BTC (where satoshis are the assets, and assets are satoshis), and it naturally supports Layer 2 networks because a native Layer 2 network would inherently support BTC, and satoshis are BTC, and assets are satoshis.
+
+Therefore, the value of the "one token one satoshi" solution is actually beyond our imagination. This is also why we believe that the potential of the Ordinals protocol has yet to be fully explored. "One token one satoshi" is simply a simplified description of assets being bound to satoshis.

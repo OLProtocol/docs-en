@@ -1,24 +1,21 @@
 OLDEX
-======
+====
+A decentralized trading platform for BTC assets built on the Lightning Network, providing a secure, cost-effective, and fast BTC asset trading experience.
 
-一个建设在闪电网络上的BTC资产的去中心化交易平台，提供安全经济快捷的BTC资产交易体验。
-
-
-目标
+Objectives
 ----
-1. BTC原旨主义：资产在BTC主链上，不改变任何BTC共识。
-2. 安全：资产不脱离用户的控制，没有任何第三方可以控制用户资产。任何时候任何情况下，用户都可以安全撤离自己的资产。
-3. 经济：交易成本低，目标是在主网交易成本的5%以下。
-4. 快捷：交易速度快，目标是5s以内。
+1. BTC Purity: Assets remain on the BTC mainchain without altering any BTC consensus rules.
+2. Security: Assets are never out of the user's control, with no third party having control over user assets.   
+3. Users can safely withdraw their assets at any time and under any circumstances.
+4. Cost-effectiveness: Low transaction costs, aiming for less than 5% of on-chain transaction costs.
+5. Speed: Fast transaction speeds, aiming for under 5 seconds.
 
+We initially support Ordinals NFT and OrdX assets, with the technical prototype currently under development.
 
-我们先支持Ordinals NFT和OrdX资产，技术原型正在开发中。
-
-
-背景
+Background
 ----
-Ordinals协议为BTC网络的资产发行打开了大门，BTC上的资产将会越来越多，这是一个势不可挡的趋势。但是BTC主网的交易成本高和交易确认时间长是我们不得不接受的现实，这个问题会制约资产发行方在BTC主网上发行优质资产，也会阻碍投资方在BTC生态中投入更多的资金。而如果没有优质的资产发行在BTC网络上，没有大量的资金投入到BTC生态中，BTC生态的蓬勃发展就仅仅是一个梦想，进展会非常缓慢。
+The Ordinals protocol has opened the door for asset issuance on the BTC network, and the number of assets on BTC will continue to increase. This is an unstoppable trend. However, the high transaction costs and long confirmation times on the BTC mainnet are a reality we must accept. These issues hinder asset issuers from issuing high-quality assets on the BTC mainnet and discourage investors from allocating more funds into the BTC ecosystem. Without high-quality asset issuance on the BTC network and significant investment into the BTC ecosystem, the flourishing development of the BTC ecosystem will remain a dream, with progress being extremely slow.
 
-为了促进BTC生态的发展，我们一直在思考如何才能让用户安全经济快捷的进行BTC资产的交易。安全经济快捷是我们最核心的目标。我们不断在探索技术方案，也不断参考业界的其他技术方案。如果没有一个真正的达成这个目标的技术方案，那我们宁愿不做。同样，如果一个BTC Layer2技术方案，不能做到安全经济快捷，那其实都是没有意义和价值的，还不如CEX，至少做到了经济快捷，用户体验最佳，除了安全这一点。当然一个Layer2不是必然要去中心化的，中心化的Layer2比比皆是，但这不是我们的目标。
+To promote the development of the BTC ecosystem, we have been contemplating how to enable users to securely, cost-effectively, and swiftly trade BTC assets. Security, cost-effectiveness, and speed are our core objectives. We continue to explore technical solutions and learn from other industry solutions. If we do not have a technical solution that truly achieves these objectives, we would rather not proceed. Similarly, if a BTC Layer2 technical solution cannot achieve security, cost-effectiveness, and speed, it would be meaningless and valueless, and it would be better to stick with centralized exchanges (CEX), which at least provide cost-effective and optimal user experiences, albeit lacking in security. Of course, a Layer2 solution doesn't necessarily have to be decentralized; there are plenty of centralized Layer2 solutions available. However, that is not our aim.
 
-我们的研究和探索还在不断进行，现在已经有了一些初步的结论。推出ordx协议是我们技术中重要的一环。当我们完成ordx协议的开发之后，就是全力开始OLDEX建设之时。更多的信息披露，我们会在官推上（@OrdX_Protocol）发布，敬请期待。
+Our research and exploration are ongoing, and we have reached some preliminary conclusions. The launch of the OrdX protocol is a crucial step in our technological progress. Once we complete the development of the OrdX protocol, we will devote all our efforts to building OLDEX. For further information, we will make announcements on our official Twitter account (@OrdX_Protocol). Stay tuned.

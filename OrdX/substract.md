@@ -1,17 +1,15 @@
-拆分方案
+
+Splitting Solution
 ====
 
-对ordx资产来说，拆分根本不是问题，这是btc的utxo模型就原生支持的。即使现在网络因为硬件和网络的限制，不允许聪太少的utxo，也可以通过灵活构造TX的方式将ordx资产拆到一个utxo中只有一个聪包含ordx资产。具体拿 #Pearl 来作为例子说明下。
+For ordx assets, splitting is not a fundamental issue as it is natively supported by the BTC UTXO model. Even though the current network imposes limitations on the minimum amount of satoshis in a UTXO due to hardware and network constraints, it is still possible to split ordx assets into a UTXO containing only one satoshi by constructing transactions flexibly. Let's use #Pearl as an example to illustrate the process.
 
-第一步：一份Pearl含有10000聪，先使用sparrow等工具，将其拆分为10分。（假设没有矿工费）  
-![初步拆分](../assets/substract1.jpg)
+Step 1: Splitting a Pearl asset with 10,000 satoshis into 10 parts using tools like Sparrow (assuming no transaction fees).  
+![Initial Split](../assets/substract1.jpg)  
+At this point, it can already meet the needs of most cases. By splitting one Pearl into ten, even if the original Pearl increases to 10,000 satoshis, the ten split parts can still be used for a long time. If further splitting is desired, continue to step 2.
 
-其实到这里，已经可以满足大多情况下的需求了。一张Pearl拆成了十张，就算原来一张涨到1万u，拆成十张，也可以对付很长时间了。如果还不满足，继续看第二步
+Step 2: Flexibly utilize the UTXO model to split the Pearl asset into 1 satoshi.  
+![Further Split](../assets/substract2.jpg)  
+With the above model, you can split the asset in any way you want if you don't find 1 Pearl too low in value. However, we do not recommend proceeding with step 2. On one hand, the current price of one Pearl is very low, so there is no need to split it further. On the other hand, it would lead to asset fragmentation. Once the second-layer network supported by the ordx protocol is established, we recommend not splitting and directly conducting transactions on the second layer.
 
-第二步：灵活使用utxo模型，将Pearl资产拆分为1聪  
-![细分](../assets/substract2.jpg)
-
-通过上面的模型，想怎么拆就怎么拆，如果不觉得1个Pearl价格太低的话。实际上我们不建议做第二步，一方面是目前一张Pearl的价格很低，没有必要继续拆；另一方面是会导致资产碎片化。等ordx协议支持的二层网络搭建起来后，我们推荐不拆分，直接上二层网络交易。
-
-第三步：直接转入二层网络进行拆分。二层网络可以进行无限拆分，不受一币一聪的限制，只是在转回主网时，必须以聪为单位。而且如果有足够的ordx资产，可以还原成Ordinals NFT转回一层。
-
+Step 3: Split directly on the second-layer network. The second-layer network allows for unlimited splitting without the limitation of one satoshi per unit. However, when transferring back to the mainnet, it must be done in satoshis. Additionally, if there is a sufficient amount of ordx assets, they can be converted back into Ordinals NFTs on the base layer.Please note that the splitting solution provided here is subject to the current limitations and recommendations. As the ordx protocol evolves, new features and optimizations may become available, and it is important to stay updated with the latest developments and guidelines.
