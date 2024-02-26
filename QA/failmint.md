@@ -1,7 +1,7 @@
 How to Determine if an Ordinals NFT is an ordx Asset
 ====
 
-Every result minted by ordx is a standard Ordinals NFT and can be transferred as any other Ordinals NFT .
+Every result minted by ordx is a standard Ordinals NFT and can be transferred as any other Ordinals NFT.
 
 However, due to the unique nature of ordx assets, when conducting off-chain transactions involving ordx assets, it is necessary to verify the authenticity of the NFT. All the required data for verification can be found on the Ordinals official website (Ordinals.com) or the unisat wallet. Let's use an example of a #Pearl NFT to illustrate how to identify if an NFT is a valid ordx asset.
 
