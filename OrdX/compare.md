@@ -2,14 +2,18 @@ Protocol Comparison
 =====
 
 
-| - | OrdX | BRC-20 | Atomicals |
+| - | ordx | Runes | Atomicals |
 | :--: | :----: | :----: | :----: | 
 | Value Proposition | Digital Treasures | - | Digital Objects |
 | Asset Type | FT | FT | NFT+FT | 
-| Minting Method | Envelope-based writing in isolated witness area based on ord | Envelope-based writing in isolated witness area based on ord | Envelope-based commitment & disclosure using "atom" | 
-| Indexing | Relies on ordx indexer | Relies on BRC-20 indexer | Relies on electrumx indexer | 
-| Verification | Verified through ordx indexer, client-side verification possible | Verified through BRC-20 indexer, client-side verification not possible | Verified through electrumx indexer, theoretically possible for client-side verification |
-| Transfer | Direct transfer | Insrcibe first, then transfer | Direct transfer | 
-| Base Unit | One sat represents one unit of the asset, asset is bound to sats and cannot be changed | Bound to addresses | Expected to be one token per sat, but can be adjusted based on the EXP parameter | 
-| Splitting Solution | Can be split, utilizing UTXO rules to divide an asset with only 546 sats into arbitrary parts, can be repeated | Infinitely divisible | not yet been finalized | 
-| Possibility of Burning | Sats cannot be burned, thus assets cannot be burned | Cannot be burned | Possibility of token being burned due to using the wrong wallet or incorrect usage |
+| Data Writing | Envelope writing with isolation witness zone based on ord | Writing to OP_RETURN | Envelope writing with isolation witness zone based on "atom" | 
+| Ledger Information | Equivalent to UTXO | Custom-built ledger | Equivalent to UTXO | 
+| Coloring Scheme | Incomplete coloring | Not applicable | Complete coloring | 
+| Base Unit | One token one sat, permanently bound and immutable | Custom | One token one sat, but not bound | 
+| Transfer | Direct transfer without writing any data | Direct transfer, but requires writing ledger data in OP_RETURN | Direct transfer without writing any data | 
+| Splitting Scheme | Flexible splitting using UTXO model | Infinitely divisible | Scheme undecided (latest news is splitting on AVM) | 
+| Burn Possibility | Cannot be burned (sats cannot be burned) | Optional | Possibility of token being burned due to using the wrong wallet or using it incorrectly | 
+| Virtual Machine | Not mentioned | Not mentioned | AVM | 
+| Layer 2 Network | Lightning Network | Not mentioned | Not mentioned | 
+
+(Runes has not been officially released, and this table will be updated in the future)
