@@ -30,6 +30,8 @@ The transfer of ordx is similar to the transfer of BTC, without any additional r
 
 Runes, similar to BRC-20, requires a transfer instruction for the transfer to occur. The advantage over BRC-20 is that it does not require engraving before transferring; instead, the transfer instruction is written in the OP_RETURN field during the transfer.
 
+In the long run, when Runes transfers, data basically needs to be written to OP_RETURN. When there are many holders and transactions are strong, countless OP_RETURN will be written to the main network. In comparison, the ordx protocol is cleaner. An asset, except for a deploy instruction and a basically fixed mint instruction, no longer needs to write any data to the main network. It is very clean and has minimal impact on the main network.
+
 Burning
 ----
 Ordx assets are bound to satoshis and cannot be burned since satoshis cannot be destroyed. If burning is desired, the satoshis can be sent to the genesis address.
