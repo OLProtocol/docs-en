@@ -8,8 +8,8 @@ Reasons for the Need for ordx
 3. Promoting the application of the Ordinals protocol by solidifying its core content, avoiding complications caused by protocol upgrades. This benefits existing assets based on the Ordinals protocol (such as BRC-20) and attracts more projects developed on the Ordinals protocol.
 4. Addressing issues with the BRC-20 protocol, which requires inscribing before transferring tokens and necessitates additional ledger to track the transfer history of BRC-20 assets.
 5. Providing an upgrade option for BRC-20 assets to migrate directly to the ordx protocol and become ordx assets.
-6. Mitigating the risk of token burn, which can occur more easily with the Atomicals protocol.
-7. Preparing for trading Ordinals assets on the Lightning Network (OLD protocol).  
+6. Mitigating the risk of token burn.
+7. Preparing for trading Ordinals assets on the Lightning Network (OLDEX protocol).  
 
 
 Ordinals Protocol
@@ -32,7 +32,6 @@ A salute to Domo, the creator of the protocol.
 
 Atomicals Protocol
 ----
-The Atomicals protocol is a highly promising protocol, with notable technological advancements, conceptual innovations, and the visionary scope of its creators. However, the complexity of the transfer principles in Atomicals, particularly the rules, has led to the problem of token burn resulting from user misbehavior. Additionally, the token splitting technology does not align with our aesthetic standards as it contradicts our concept of one sat corresponding to one asset. These divergent technical choices have ultimately propelled us to advance the ordx protocol.
-
+The Atomicals protocol is a highly promising protocol, with notable technological advancements, conceptual innovations, and the visionary scope of its creators. 
 The Atomicals protocol and the Ordinals protocol have many similarities, but they differ significantly in terms of concepts and implementation. It can be said that the Atomicals protocol and the Ordinals protocol exist at the same level and compete with each other. This healthy competition and mutual inspiration will ultimately promote the development of technology. Let us witness the confrontation and mutual stimulation between the Ordinals protocol and the Atomicals protocol, and move forward together.
 

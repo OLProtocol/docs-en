@@ -3,7 +3,7 @@ Instructions
 
 The ordx protocol references the Atomicals protocol and the BRC-20 protocol. In terms of ideology, it is closer to the Atomicals protocol, while in terms of implementation, it is closer to the BRC-20 protocol.
 
-The ordx protocol only has two instructions: deploy and mint. It does not require a transfer instruction. The basic principle is that each unit of asset is bound to one satoshi, so transferring the satoshi also means transferring the asset. Therefore, there is no need for additional ledger records of asset transfer history, nor is there a need to inscribe transfer instructions before the transfer. This solves the problem of needing to inscribe before transferring in the BRC-20 protocol and avoids the issue of burning assets in the Atomicals protocol.
+The ordx protocol only has two instructions: deploy and mint. It does not require a transfer instruction. The basic principle is that each unit of asset is bound to one satoshi, so transferring the satoshi also means transferring the asset. Therefore, there is no need for additional ledger records of asset transfer history, nor is there a need to inscribe transfer instructions before the transfer. 
 
 deploy
 ----
@@ -14,7 +14,6 @@ deploy
 | op | Yes | Instruction: deploy |
 | tick | Yes | Token name: allowed characters are 3 or 5-16 characters long (4 characters reserved for BRC-20) |
 | lim | No | The limit of tokens minted at a time. The default is 10,000. If minting tokens on a specific satoshi, the default is 1. |
-| n | No | Positive integer. Specifies the number of satoshis required for one token. The default is 1, with a minimum of 1. |
 | block | No | No total supply limit, but specifies the starting and ending block heights for minting (start-end). (Choose either block height range or satoshi attributes.) |
 | attr | No | Requirements for satoshi attributes, for example: "rar=uncommon;cn=1000;trz=8". Can be expanded. |
 | des | No | Description content |

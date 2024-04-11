@@ -61,6 +61,7 @@ The Runes protocol currently appears to be less open, resembling a project rathe
 
 Summary
 ----
-Runes does not use the Ordinals protocol, which greatly disappoints us regarding Runes. It seems that only the development team of the ordx protocol recognizes the importance of the Ordinals protocol, placing it in a similar position to the IP/TCP protocol. We will adhere to this conclusion and continue to promote the infrastructure and applications of the Ordinals protocol, ensuring that assets issued based on the Ordinals protocol hold a significant position in the BTC ecosystem.
+Runes does not use the Ordinals protocol, which greatly disappoints us. 
+It seems that only the development team of the ordx protocol recognizes the importance of the Ordinals protocol, placing it in a similar position to the IP/TCP protocol. We will adhere to this conclusion and continue to promote the infrastructure and applications of the Ordinals protocol, ensuring that assets issued based on the Ordinals protocol hold a significant position in the BTC ecosystem.
 
 (To be continued, awaiting updates)

@@ -30,18 +30,19 @@ The Atomicals protocol uses the UTXO model to track and transfer arc20 assets bu
 3. Coloring Scheme   
 ordx does not have a coloring problem because it identifies each satoshi, and whether a satoshi is bound to an asset is determined by its historical data, independent of the satoshi's location.
 Atomicals currently only supports a complete coloring scheme, meaning that all satoshis within a UTXO must be colored. Otherwise, it would result in burning.
+(Atomicals finally chose the semi-colored solution to solve the splitting problem in 2024.04. This is a contribution of the ordx protocol to the BTC ecosystem.)
 
 4. Splitting Scheme   
 Due to its identification and tracking of each satoshi, the ordx protocol can flexibly utilize the UTXO model to split assets, allowing formore granular control and efficient asset management.
-Atomics’ current split plan has not yet been finalized.
+Atomicals finally chose a semi-colored solution to solve the splitting problem in 2024.04.
 
 5. Virtual Machine Solution  
 The ordx protocol is a relatively new protocol that started its design in November 2023, taking inspiration from Ordinals, BRC-20, and Atomicals. Due to factors such as manpower and time constraints, progress has been slow, and we currently do not have a well-defined virtual machine technology solution. However, we do not believe that the Bitcoin mainnet requires a virtual machine, so this work has been delayed, and we haven't put much thought and planning into it.
-Atomicals' concept of the AVM (Atomicals Virtual Machine) has gained popularity, but the specific implementation details are still unclear.
+Atomicals' AVM has announced a solution where data and logic are placed in one layer and executed in the indexer. This solution does not completely solve the trust and security issues.
 
 6. Layer 2 Network Solution  
 Since its inception, the ordx protocol has been focused on the Lightning Network. We have always emphasized that we only develop native BTC technologies. In our view, the Lightning Network is the native layer 2 network supported by BTC. Only such a layer 2 network can ensure the security of user assets and ensure that assets are under the control of users rather than project teams.
-Has the Atomicals protocol mentioned its own layer 2 network concept? This is something we might have missed.
+The AVM solution of the Atomicals protocol should be their second-layer solution.
 
 7. DID (Decentralized Identifiers)  
 The ordx protocol has its own DID solution, which is partially revealed through the restrictions on tick names. The tick length in ordx is a maximum of 16 bytes. We won't disclose the specific details at the moment, but it is completely different from the DID solution in the Atomicals protocol.
@@ -49,4 +50,4 @@ The ordx protocol has its own DID solution, which is partially revealed through 
 
 Summary
 ----
-The ordx protocol and the Atomicals protocol differ significantly, but both are builders of the BTC ecosystem and aspire to its prosperity. We are not enemies; we are fellow travelers on the path of progress.
+The ordx protocol and the Atomicals protocol differ significantly, but both are builders of the BTC ecosystem and aspire to its prosperity. 

@@ -75,44 +75,6 @@ Digital Gold
 }  
 Only the first satoshi of each BTC can be successfully minted. The serial number of this sat ends with eight zeros. This means that each token is worth one BTC.
 
-Lucky Charm
-----
-{  
-  "p": "ordx",  
-  "op": "deploy",  
-  "tick": "如意",  
-  "lim": "1000",  
-  "n": "100000",  
-  "attr": "cn=100000",    
-  "des": "万事如意"  
-}  
-Mint a 如意 on a SatRange with 100,000 consecutive numbers. Each 如意 consists of 100,000 sats, and the maximum mint per transaction is 1,000 如意. 
-The owner of a 如意 will receive blessings for all their wishes to come true.
-
-Red Envelope
-----
-{  
-  "p": "ordx",  
-  "op": "deploy",  
-  "tick": "红包",  
-  "block": "830000-838888",  
-  "lim": "1000",   
-  "n": "888",   
-  "des": "恭喜发财"  
-}  
-Each 红包 requires 888 sats, and the maximum mint per transaction is 1,000 红包. 红包 have special significance, especially in Chinese culture, symbolizing good luck and prosperity.
-
-Red Rose
-----
-{  
-  "p": "ordx",  
-  "op": "deploy",  
-  "tick": "Roses",  
-  "n": "1314",  
-  "attr": "pattern=5201314",  
-  "des": "forever love"  
-}  
-Create a red rose by casting a sat with a number that includes "5201314". It requires 1314 sats, and the first sat is a specified special sat.
 
 DID
 ----
