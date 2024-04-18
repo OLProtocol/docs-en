@@ -14,8 +14,9 @@ deploy
 | op | Yes | Instruction: deploy |
 | tick | Yes | Token name: allowed characters are 3 or 5-16 characters long (4 characters reserved for BRC-20) |
 | lim | No | The limit of tokens minted at a time. The default is 10,000. If minting tokens on a specific satoshi, the default is 1. |
+| selfmint | No | The default is false; set to true, only the address holding the ticker can mint (parent-child inscription) |
 | block | No | No total supply limit, but specifies the starting and ending block heights for minting (start-end). (Choose either block height range or satoshi attributes.) |
-| attr | No | Requirements for satoshi attributes, for example: "rar=uncommon;cn=1000;trz=8". Can be expanded. |
+| attr | No | Requirements for satoshi attributes, for example: "rar=uncommon;trz=8". Can be expanded. |
 | des | No | Description content |
 
 For example:  
@@ -29,15 +30,15 @@ For example:
 
 The attr field is an expandable attribute that allows more special satoshis to be filtered out using this attribute. Currently supported attributes are:
 1. rar: Rarity defined in Ordinals: common, uncommon, rare, epic, legendary, mythic
-2. cn: Consecutive numbers, specifies the quantity of consecutive numbered satoshis, for example, cn=1000 for 1000 consecutively numbered satoshis.
-3. trz: Trailing zeros, specifies the number of trailing zeros in the satoshi number, for example, trz=8 indicates that the satoshi number has 8 trailing zeros.
+2. trz: Trailing zeros, specifies the number of trailing zeros in the satoshi number, for example, trz=8 indicates that the satoshi number has 8 trailing zeros.
 
 If you have any good ideas or discover satoshis with special value, you can submit the code to us.
 
 Through the deploy instruction, we can see that the ordx protocol differs from other protocols mainly in the following aspects:
-1. There is no supply limit; instead, the effective block height for minting is specified. All tokens minted within this height range are valid.
-2. One satoshi is bound to one unit of asset, and one token can represent multiple units of asset, i.e., one token is bound to n satoshis.
-3. It is possible to specify that only satoshis with certain attributes can be minted, meaning that assets can only be bound to satoshis with specific attributes.
+1. One satoshi is bound to one unit of asset.
+2. There is no supply limit; instead, the effective block height for minting is specified. All tokens minted within this height range are valid.
+3. Support the project party’s overall control through the parent-child inscription..
+4. It is possible to specify that only satoshis with certain attributes can be minted, meaning that assets can only be bound to satoshis with specific attributes.
 
 mint
 ----
@@ -62,12 +63,11 @@ General checks that need to be performed during each mint:
 2. The op must be mint.
 3. The tick must have been deployed.
 4. The amt must be less than or equal to the "lim" specified in the deploy instruction.
-5. If the "n" rule is specified in the deploy instruction: The number of satoshis required for this mint must be at least "n". In other words, the number of bound utxos must be greater than or equal to "n".
+5. If the "selfmint" rule is specified in the deploy instruction: Only the address holding the ticker can mint (parent-child inscription).
 6. If the "block" rule is specified in the deploy instruction: The block height for this mint must be within the specified range.
 7. If the "attr" rule is specified in the deploy instruction: The satoshi parameter must be provided during minting, and the satoshi must pass the checks based on the attributes specified in "attr":
    - If the "rar" attribute is present: Check if the satoshi belongs to this rarity.
    - If the "trz" attribute is present: Check if the satoshi's serial number has enough trailing zeros.
-   - If the "cn" attribute is present: Check if there are enough consecutive numbered satoshis starting from the provided satoshi.
 
 If any of the above rules are not met, minting is not allowed. Even if a tool tries to force a mint, ordx's indexer will consider it invalid. Wallets can independently verify each token using the indexer of the Ordinals protocol and the data from the Deploy instruction.
 
@@ -84,8 +84,5 @@ Upgrades other protocols' FT (fungible tokens) to ordx, primarily supporting BRC
   "cfactor": "1"  
 }  
 
-Upgrade process for BRC-20:
-Since BRC-20 tokens are not actually bound to satoshis or utxos but are instead recorded on addresses through inscriptions, the upgrade requires transferring the BRC-20 tokens to a black hole address and then providing the corresponding ordx assets. However, there is a problem: Bitcoin does not have a black hole address. The so-called black hole address is just a Satoshi Nakamoto address, and having utxos in the Satoshi Nakamoto address would cause them to increase exponentially, overwhelming the Bitcoin network. Therefore, a proxy service address is used for the transfer, allowing for the easy transfer of BRC-20 tokens in and out. If a sufficient proportion of tokens can eventually be upgraded to the new protocol, the proxy will then transfer the old tokens to a black hole address.
-
-The ideal solution:
-Lock the tokens into the Lightning Network channel using the OLD protocol and directly convert them into ordx assets and destroy the old tokens when withdrawing. This is the simplest and most direct solution.
+Possible solution:
+Lock the tokens into the Lightning Network channel using the OLD protocol and directly convert them into ordx assets and destroy the old tokens when withdrawing.
