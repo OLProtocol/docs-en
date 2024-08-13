@@ -27,5 +27,6 @@
 * FAQ
   * [How to determine if an Ordinals NFT is an ordx asset](QA/failmint.md)
 * [Roadmap](roadmap.md)
+* [API](https://apiprd.ordx.space/mainnet/swagger/index.html)
 * [Donate](donate.md)
 * [About](README.md)
